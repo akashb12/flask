@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signin</title>
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+/* navigationbar */
+#a{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+
+}
+#a::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#b{
+    height: 56px;
+    margin: 5px -20px;
+}
+
+#b img{
+    height: 70px;
+    margin: -10px 32px;
+
+
+}
+
+#a ul{
+
+    /*display flex to bring content in one line */
+   display: flex;
+   
+}
+#a ul li{
+    color: white;
+    /* to remove dots we use list style */
+    list-style: none;
+    font-size: 1.3rem; 
+       
+}
+#a ul li a{
+    /* display block to give padding */
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    /* to remove underlines we use text decoration */
+    text-decoration: none;
+    
+}
+#a ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/* home section */
+#brief{
+    display: flex;
+    flex-direction: column;
+    padding: 65px 181px;
+    height: 207px;
+    /* to bring content to center */
+     justify-content: center;
+    align-items: center; 
+}
+#brief::before{
+    content: "";
+    /* to get image at background */
+    background: url(../static/na7.jpg)no-repeat center center/cover;
+    position: absolute;
+    height: 259%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.59;
+
+}
+#brief .logo img{
+    height: 190px;
+    margin: -10px 32px;
+ 
+
+
+}
+#brief .h {
+    font-size: 5rem;
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    /* background-color: rgb(4, 3, 102); */
+}
+#brief .bor{
+    font-size: 1.9rem;
+    border: 2px solid black;
+    padding: 2px 2px;
+    color: white;
+    background-color: rgb(4, 3, 102);
+}
+#brief .bor1{
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+/* registration */
+#regform{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+   
+}
+.form-control{
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 2rem;
+    width: auto;
+
+}
+#reg{
+    margin: 20px 10px;
+}
+.register{
+    font-size: 2rem;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+
+.center{
+    text-align: center;
+}
+
+    </style>
+    <link rel="stylesheet" media="screen and (max-width:1080px)" / href="nakshsignin/phone.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+
+<body>
+    <nav id="a">
+        <div id="b">
+            <img src="nalogo.png" alt="">
+
+        </div>
+        <ul>
+            <li class="itema"><a href="/">Home</a></li>
+
+
+
+        </ul>
+    </nav>
+
+
+    <section id="brief">
+        <h1 class="logo"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><img src="nalogo.png"
+                alt=""></h1>
+        <h1 class="h center ">NAKSH AUTOMATION
+        </h1>
+        <P class="center bor">
+            Automation To An Easier Life
+        </P>
+    <div class="container1">
+        <h1 class="register center">REGISTER</h1>
+        <form id="regform" method="POST" onsubmit=" return regvalidateform()">
+            Enter Email:<input type="text" id="regemailid" class="form-control" name="uname">
+            <span id="regusererror" class="text-danger"></span>
+
+            Enter Password:<input type="password" id="regpasswordid" class="form-control" name="passw">
+            <span id="regpassworderror" class="text-danger"></span>
+            <button id="reg" class="btn btn-primary" type="submit">submit</button>
+            
+        </form>
+    </div>
+    <script type="text/javascript">
+        function regvalidateform(){
+            // for storing regemailid and regpasswordid value in variables
+            var regemail=document.getElementById('regemailid').value;
+            var regpassword=document.getElementById('regpasswordid').value;
+
+        //    this is for setting email and password check
+            var emailcheck = /^[A-Za-z_]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z]{2,6}$/;
+            var passwordcheck = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z_0-9!@#$%^&*]{8,16}$/;
+            if (emailcheck.test(regemail)) {
+                
+
+                document.getElementById('regusererror').innerHTML = "correct username";
+                // return true;
+                
+            }else {
+                document.getElementById('regusererror').innerHTML = "**username is invalid";
+                alert("error:username is not valid");
+                return false;
+
+            }
+            if (passwordcheck.test(regpassword)) {
+                document.getElementById('regpassworderror').innerHTML = "correct password";
+                // return true;
+                
+
+
+            }else {
+                document.getElementById('regpassworderror').innerHTML = "**password is invalid";
+                alert("error:password is not valid")
+                return false;
+            }
+            // to insert into localstorage
+            localStorage.setItem('regemail',regemailid.value);
+            localStorage.setItem('regpassword',regpasswordid.value);
+        }
+    </script>
+</body>
+</html>

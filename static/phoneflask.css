@@ -1,0 +1,37 @@
+.qimg img{
+    width: 350px;
+
+}
+.explain{
+    width: 350px;
+}
+
+.qtitle {
+    font-size: 1.4rem;
+    width: 350px;
+    }
+
+    .codefont{
+       
+            font-size: 0.7rem;
+       
+    }
+.but {
+        width: 62px;
+        
+    }
+    form#regform {
+        width: 200px;
+    }
+body {
+    width: 100%;
+}
+
+.explain1{
+    
+    font-size: 0.6rem;
+
+}
+/*.mar {
+    margin-left: 50px;
+}*/

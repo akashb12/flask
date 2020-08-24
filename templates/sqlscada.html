@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <style>
+    .navbar {
+      color: blanchedalmond;
+      background-color: black;
+    }
+
+    .navbar ul li a {
+      /* display block to give padding */
+      color: white;
+      display: block;
+      padding: 3px 22px;
+      border-radius: 20px;
+      /* to remove underlines we use text decoration */
+      text-decoration: none;
+
+    }
+
+    .navbar ul li a:hover {
+      color: black;
+      background-color: white;
+
+    }
+
+    .center {
+      text-align: center;
+
+    }
+
+    .qtitle {
+      font-weight: 900;
+    }
+
+    #brief {
+      display: flex;
+      flex-direction: column;
+      padding: 65px 181px;
+      /* height: 2907px; */
+      /* to bring content to center */
+      justify-content: center;
+      align-items: center;
+    }
+
+    #brief::before {
+      content: "";
+      /* to get image at background */
+      background-color: cyan;
+      position: absolute;
+      height: 0%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.59;
+
+    }
+
+    .qimg img {
+      width: 805px;
+    }
+
+    /* .qimg img{
+      height: 200px;
+
+    } */
+ footer {
+  background-color: black;
+  height: 200px;
+  margin-top: 11px;
+}
+.a {  display: flex;
+     justify-content: center;
+     align-items: center;
+
+}
+.b{
+border: 10px white solid;
+background-color: white;
+border-radius: 20px;
+}
+  </style>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" media="screen and (max-width:952px)" / href="/static/phoneplcpro.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+  <title>intouchscada</title>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script data-ad-client="ca-pub-8019090857172030" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light" id="top">
+  <a class="navbar-brand" href="#">NAKSHAUTOMATION</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/logout">Logout</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/pyhmi">PYHMI</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/ask">Q&A</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Overview
+        </a>
+        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+          
+<a class="dropdown-item" href="#">PLC INTERFACING</a>
+<a class="dropdown-item" href="/plcove">1.Plc Overview</a>
+<a class="dropdown-item" href="/plcpro">2.Plc Programming</a>
+<a class="dropdown-item" href="/plcwplsoft">3.Interfacing Plc with wplsoft</a>
+<a class="dropdown-item" href="/kep">4.Interfacing Plc with Intouch scada</a>
+<a class="dropdown-item" href="/sqlscada">5.Interfacing Plc with Sqlserver </a>
+<a class="dropdown-item" href="/pythonplc">6.Interfacing Plc with Python</a>
+<div class="dropdown-divider"></div>
+ <a class="dropdown-item" href="#">FLASK FRAMEWORK</a>
+<a class="dropdown-item" href="/flask">1.FLASK</a>
+<a class="dropdown-item" href="/flaskuser">2.Flask login&Register</a>
+<a class="dropdown-item" href="/flaskvalid">3.Flask validation</a>
+ <div class="dropdown-divider"></div>
+  <a class="dropdown-item" href="#">PYTHON APPLICATIONS</a>
+<a class="dropdown-item" href="/reminder">1.Water Reminder</a>
+
+	</div>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
+
+  
+  <section id="brief">
+
+
+
+    <h2 class="qtitle center">Interfacing Intouch SCADA with SQL SERVER</h2>
+
+    <div class="q1">
+      <!-- <h4>Preparing KEPServerEX for a FastDDE / SuiteLink Connection </h4> -->
+
+      <p class="explain ">Once user reads PLC tags like counter or timer value then it can be<br> easily stored into SQL SERVER database.First user needs to create connection string using ODBC.
+        <br><br>
+      </p>
+
+      <h4>ODBC connection string</h4><br><br>
+      <p>
+        ODBC stands for data source administrator, user first needs to go to<br>
+        1.First open SQL server database and click on connect button and create a database for storing PLC tags.<br>
+        2.If you are reading counter value or timer value then they are of integer type so if you want to store<br>
+        it to database then give proper data types for columns.For storing counter it should be INT type.
+       
+        
+      </p>
+      <div class="qimg">
+        <img src="/static/odbcdatabase2.PNG" alt="">
+  
+      </div>
+      <p class="explain">While connecting with database if user gets this error then don't worry.
+       
+      </p>
+      <div class="qimg">
+        <img src="/static/odbcdatabase4.PNG" alt="">
+        
+  
+      </div>
+      <p class="explain">Just go to services(you can search your pc for finding it)
+        scroll down till you find sql server and<br> check its status if its not showing running then just right click on sql server and click start.
+       
+    </p>
+    <div class="qimg">
+        <img src="/static/odbcdatabase5.PNG" alt="">
+        
+  
+      </div>
+
+      
+
+
+
+
+
+
+
+
+
+      <p>
+     
+        3. NOW set system DSN. For that search for odbc data sources 32 bit in your PC.<br>
+        Click on Add button
+        
+      </p>
+      <div class="qimg">
+        <img src="/static/dsn.PNG" alt="">
+  
+      </div>
+      <p>4. Select driver for which you want to set ODBC connection.<br>
+        User can select SQLSERVER
+       
+        
+      </p>
+      <div class="qimg">
+        <img src="/static/odbcdatabase.PNG" alt="">
+  
+      </div>
+      <p class="explain">3. Give name to your ODBC connection<br>
+        5. You can add description as you want<br>
+        6. Now add server name which you will get once you open SQL SERVER
+      </p>
+      <div class="qimg">
+        <img src="/static/odbcdatabase2.PNG" alt="">
+  
+      </div>
+      <p class="explain">Copy the server name and paste it in ODBC 
+       
+      </p>
+      <div class="qimg">
+        <img src="/static/odbcdatabase1.PNG" alt="">
+  
+      </div>
+      <p class="explain">7. Select windows authentication or sql server authentication depending<br>on what was selected while connecting sql server
+       
+    </p>
+    <div class="qimg">
+        <img src="/static/odbcdatabase2.PNG" alt="">
+        
+  
+      </div>
+      <p class="explain">8. If here you have selected windows authentication then select same<br> for ODBC connection and before this please connect with your database.<br>Create tables in database and keep everything ready and then set ODBC connection else ODBC configuration will<br> throw an error as connection failed
+       
+    </p>
+    <div class="qimg">
+        <img src="/static/odbcdatabase3.PNG" alt="">
+        
+  
+      </div>
+      <p class="explain">9. Now that connection is established user can provide database name for which connection is needed.<br>
+        After that just click on next until you see finish button and that's all for setting ODBC connection.
+      </p>
+      <div class="qimg">
+        <img src="/static/odbcdatabase6.PNG" alt="">
+        
+  
+      </div>
+    </div>
+    <div class="q1">
+      <h4>Using ODBC connection string in SCADA</h4><br><br>
+      <p class="explain">10. So ODBC is established next step is to provide this ODBC connection string to INTOUCH SCADA.<br>
+        11. Now comes very important step that is BIND LIST.Bind list is used to link PLC tags which are present<br>
+        in SCADA and Database columns where you want to store this tags.
+        12.In Intouch SCADA you will find bind list in tools section.
+      </p>
+      
+        <img src="/static/odbcdatabase7.PNG" alt="">
+       
+
+
+
+    </div>
+    <div class="q1">
+
+      <p class="explain">13. Open bind list and click on new bindlist.<br>
+        11. Give name to bindlist<br>
+        12. Now you need to link PLC tags with DAtabase Columns.<br>
+        13. In tag.fieldname put the same tag name you created and which you want to insert into database.<br>
+        14. In Column name insert the database column name where you want to store that plc tag. <br>
+        15. In my case i have created a tag name called bagcount and also a database column name called bagcount.<br>
+        You can use different names also.
+      </p>
+      <div class="qimg">
+        <img src="/static/odbcdatabase8.PNG" alt="">
+        
+  
+      </div>
+      <p class="explain">16. After completing bind list let's move ahead to calling ODBC connection string to scada<br>
+        17. For calling connection string you need to write a simple script<br>
+
+      </p>
+      <div class="qimg">
+        <img src="/static/odbcdatabase9.PNG" alt="">
+        
+  
+      </div>
+      <p class="explain">18. ResultCode=SQLConnect( ConnectionId,"DSN=scadazuariodbc;<br>
+        This is to connect with ODBC string.For this provide the same DSN name which we created before while setting ODBC string.<br>
+	19. APP=Microsoft Windowns Operating System;WSID=(local);<br>
+	DATABASE=scada;Trusted_connection=Yes");<br>
+        You can put your operating system and provide the database name in which you want to store data.<br>
+        20. ResultCode=SQLInsert( ConnectionId, "scadatb", "scadazuaribl" );<br>
+        This is for inserting data into database for that give table name for accessing your columns and give bindlist name.<br>
+        21. Finally end connection with disconnect command.<br>
+      
+        22. Now script is complete you can press on okay.<br>
+        Sometimes it will ask you to define the terms result code and connection ID so just define it with same datatype.<br>
+        23. Memory integer or memory discrete are for simulation purpose they work without connecting with plc.
+
+
+       
+
+      </p>
+      <div class="qimg">
+        <img src="/static/odbcdatabase10.PNG" alt="">
+        
+        
+  
+      </div>
+      <div class="qimg">
+        <img src="/static/odbcdatabase11.PNG" alt="">
+        
+        
+  
+      </div>
+    </div>
+    <div class="q1">
+      <p class="explain">24. You can add this script to a button which is when pressed will insert everything you put in a bind list to database.<br>
+        For that you need to select action <img src="/static/odbcdatabase14.PNG" alt=""> and write script inside it.<br>
+      Or you can use data change script which will execute this script on every datachange.<br>
+      For eg: In my case i am inserting data for everyminute for that go to scripts and select data change<br> script and select tagname.field as minute for that double click on tagname.field and window will pop.
+
+
+       
+
+      </p>
+      <img src="/static/odbcdatabase12.PNG" alt="">
+      <div class="qimg">
+        <img src="/static/odbcdatabase13.PNG" alt="">
+        
+        
+  
+      </div>
+
+
+
+    </div>
+   
+    <div class="q1">
+       <h4>Retrieve Database values and display in SCADA</h4><br><br>
+      <p class="explain">25. It is very simple to do.<br>
+        Just use same script and replace insert with select.
+      </p>
+      <div class="qimg">
+        <img src="/static/odbcdatabase15.PNG" alt="">
+        
+        
+  
+      </div>
+      <p class="explain">26. ResultCode=SQLFirst( ConnectionId );<br>
+        This is for retrieve content from 1st row<br>
+        27. Now to display those values back into SCADA just provide same plc tags to # so that they can properly retrieve the data.
+
+      </p>
+      <div class="qimg">
+        <img src="/static/odbcdatabase16.PNG" alt="">
+        
+        
+  
+      </div>
+      <p class="explain">28. For count i have given same BAGCOUNT tag which i had used while inserting it into database.<br>
+        Now the # will get replaced by retrieved data from database.
+
+      </p>
+      <div class="qimg">
+        <img src="/static/odbcdatabase17.PNG" alt="">
+        
+        
+  
+      </div>
+      
+       
+       
+
+
+
+    </div>
+
+
+
+
+
+      <h2 class="qtitle center">You can share your difficulties related to PLC,Webdevelopment,Python,Flask framework</h2>
+
+  
+            <form id="upload-form" action="/uploader" method="POST" enctype="multipart/form-data" onsubmit=" return askvalidateform()">
+        <div class="form-group">
+            <label for="name">Enter Name:</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+            <span id="nameerror" class="text-danger"></span>
+          </div>
+         
+          <div class="form-group">
+            <label for="comment">Ask Your Question: </label>
+            <textarea rows="5" cols="30" class="form-control " id="comment" name="comment"
+              placeholder="Ask Question"></textarea>
+            <span id="commenterror" class="text-danger"></span>
+          </div>
+        <input type="file" name="file" accept="image/" multiple>
+        <input type="submit" value="send" class="btn btn-primary">
+        </form>
+
+
+
+
+  </section>
+
+<footer>
+  <div class="a">
+          <a class="nav-link" href="/privacy">privacy policy</a>
+           <a class="nav-link" href="/static/about.html">AboutUs</a>
+
+  </div>
+  <div class="a">
+<a class="copyrighted-badge" title="Copyrighted.com Registered &amp; Protected" target="_blank" href="https://www.copyrighted.com/website/QjqZmRG3Uu18hu8o"><img alt="Copyrighted.com Registered &amp; Protected" border="0" width="125" height="35" srcset="https://static.copyrighted.com/badges/125x25/04_2_2x.png 2x" src="https://static.copyrighted.com/badges/125x25/04_2.png" /></a><script src="https://static.copyrighted.com/badges/helper.js"></script>
+</div>
+<div class="a">
+
+<a class="nav-link " href="https://www.linkedin.com/in/naksh-automation-61a72b1a9"><i class="fa fa-linkedin b"></i></a>
+<a class="nav-link " href="https://github.com/akashb12?tab=repositories"><i class="fa fa-github b"></i></a>
+<a class="nav-link " href="mailto:nakshautomation07@gmail.com"><i class="fa fa-envelope b"></i></a>
+
+
+</div>
+<div class="a">
+
+<a class="nav-link " href="#top"><i class="fa fa-chevron-up"></i></a>
+
+</div>
+
+</footer>
+<script type="text/javascript">
+    function askvalidateform() {
+      // for storing regemailid and regpasswordid value in variables
+      var askname = document.getElementById('name').value;
+      var askcomment = document.getElementById('comment').value;
+
+      //    this is for setting email and password check
+      var namecheck = /^[A-Za-z_0-9- !@#$%^&*()/.,:;"']{3,}$/;
+      var commentcheck = /^[A-Za-z_0-9- !@#$%^&*().,:;"'\n]{3,}$/;
+
+      if (namecheck.test(askname)) {
+
+
+        document.getElementById('nameerror').innerHTML = " ";
+        // return true;
+
+      } else {
+        document.getElementById('nameerror').innerHTML = "**Error";
+        alert("error:Please Enter Valid Name");
+        return false;
+
+      }
+      if (commentcheck.test(askcomment)) {
+        document.getElementById('commenterror').innerHTML = "";
+        // return true;
+
+
+
+      } else {
+        document.getElementById('commenterror').innerHTML = "**Error";
+        alert("error:Please Enter Valid Comment")
+        return false;
+      }
+      // to insert into localstorage
+
+    }
+  </script>
+
+</body>
+
+</html>

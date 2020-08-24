@@ -1,0 +1,16 @@
+.qimg img{
+    width: 350px;
+
+}
+.explain{
+    width: 350px;
+}
+
+.qtitle {
+    font-size: 1.4rem;
+    width: 350px;
+    }
+    textarea.form-control {
+        height: auto;
+        width: 300px;
+    }

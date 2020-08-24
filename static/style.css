@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* CSS Variables */
+:root{ 
+
+}
+/* to flex navigation bar */
+#a{
+    /* display flex means it will come in row */
+    display: flex;
+    align-items: center;
+    /* this is to reduce navigation bar height and width */
+    position: relative;
+}
+/* before is used forstyling navigation bar */
+#a::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+/* ?to flex logo and text for navigation bar*/
+#b{
+    height: 56px;
+    margin: 5px -20px;
+
+}
+
+
+
+#b img{
+    height: 56px;
+    margin: 0px 38px;
+
+
+}
+#a ul{
+
+     /*display flex to bring content in one line */
+    display: flex;
+    
+}
+#a ul li{
+    color: white;
+    /* to remove dots we use list style */
+    list-style: none;
+    font-size: 1.3rem; 
+       
+}
+#a ul li a{
+    /* display block to give padding */
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    /* to remove underlines we use text decoration */
+    text-decoration: none;
+    
+}
+
+
+#a ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+
+
+/* home section */
+#home{
+    /* it will come side by side */
+    display: flex;
+    /* this is to bring text one below the other */
+    flex-direction: column;
+    padding: 365px 200px;
+    height: 453px;
+    /* to bring content to center */
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    /* to get image at background */
+    background: url(../bg.jpg)no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.59;
+
+}
+#home h1{
+    color:black ;
+    text-align: center;
+    font-size: 1.9rem;
+}
+#home p{
+    color:black ;
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+/* services section */
+#ser{
+    margin: 34px;
+    display: flex;
+ }
+#ser .box{
+    border: 2px solid rebeccapurple;
+    background-color: cornflowerblue;
+    border-radius: 32px;
+    margin: 14px;
+    
+
+    
+
+ 
+
+}
+#ser .box img{
+    
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+#ser .box .h{
+    display: block;
+} 
+
+
+/* client section */
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(../bg.jpg);
+    width: 100%;
+    height: 44%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+
+
+
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client .citem img{
+    height: 50px;
+}
+.citem{
+    padding: 34px;
+}
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(../contact.jpg) no-repeat center center/cover;
+}
+#contactbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+#contactbox input,
+#contactbox textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.3rem;
+}
+#contactbox label{
+    font-size: 2.0rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 1px 20px;
+}
+
+
+
+/* utility class */
+.h{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.h1{
+    font-size: 1.8rem;
+    padding: 12px;
+    
+
+
+}
+
+
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+
+
+
+        
+ 

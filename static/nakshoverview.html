@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview</title>
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+
+}
+#a{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+
+}
+#a::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#b{
+    height: 56px;
+    margin: 5px -20px;
+}
+
+#b img{
+    height: 70px;
+    margin: -10px 32px;
+
+
+}
+
+#a ul{
+
+    /*display flex to bring content in one line */
+   display: flex;
+   
+}
+#a ul li{
+    color: white;
+    /* to remove dots we use list style */
+    list-style: none;
+    font-size: 1.3rem; 
+       
+}
+#a ul li a{
+    /* display block to give padding */
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    /* to remove underlines we use text decoration */
+    text-decoration: none;
+    
+}
+#a ul li a:hover{
+    color: black;
+    background-color: white;
+}
+#briefa{
+    display: flex;
+    flex-direction: column;
+    padding: 65px 181px;
+    height: 153px;
+    /* to bring content to center */
+     justify-content: center;
+    align-items: center; 
+}
+#briefa::before{
+    content: "";
+    /* to get image at background */
+    background: url(../static/na7.jpg)no-repeat center center/cover;
+    position: absolute;
+    height: 219%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.59;
+
+}
+#briefa .logo img{
+    height: 190px;
+    margin: -10px 32px;
+ 
+
+
+}
+#briefa .h {
+    font-size: 5rem;
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    /* background-color: rgb(4, 3, 102); */
+}
+#briefa .bor{
+    font-size: 1.9rem;
+    border: 2px solid black;
+    padding: 2px 2px;
+    color: white;
+    background-color: rgb(4, 3, 102);
+}
+#briefa .bor1{
+    font-size: 1.5rem;
+
+}
+#briefa .list{
+    /* border: 2px solid black; */
+    margin: 2px 10px;
+    font-size: 1.3rem;
+   
+    
+
+ }
+#briefa .list ul li{
+    border: 2px solid black;
+    margin: 9px 10px;
+    list-style: none;
+    background-color: black;
+    border-radius: 20px;
+    
+    
+
+} 
+#briefa .list ul li a{
+    /* display block to give padding */
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    /* to remove underlines we use text decoration */
+    text-decoration: none;
+}
+#briefa .list ul li a:hover{
+    color: black;
+    background-color: white;
+} 
+
+
+/* utility */
+.center{
+    text-align: center;
+}
+    </style>
+    <link rel="stylesheet" media="screen and (max-width:1080px)" / href="naksh1/phone.css">
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav id="a">
+        <div id="b">
+            <img src="nalogo.png" alt="">
+
+        </div>
+        <ul>
+            <li class="itema"><a href="/">Home</a></li>
+           
+
+        </ul>
+    </nav>
+
+
+    <!-- body -->
+    <section id="briefa">
+        <h1 class="logo"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><img src="nalogo.png"
+                alt=""></h1>
+        <h1 class="h center ">NAKSH AUTOMATION
+        </h1>
+        <P class="center bor">
+            Automation To An Easier Life
+        </P>
+        <div class="list">
+            <ul class="ulist">
+                <li class="item1 center"><a id="" href="/navigation.html" target="_blank">PLC OVERVIEW</a></li>
+                <li class="item1 center"><a href="#">PLC PROGRAMMING</a></li>
+                <li class="item1 center"><a href="#">INTERFACING DELTA PLC WITH KEPSERVER</a></li>
+                <li class="item1 center"><a href="#">INTERFACING DELTA PLC WITH INTOUCH SCADA</a></li>
+                <li class="item1 center"><a href="#">INTERFACING DELTA PLC WITH PYTHON</a></li>
+                <li class="item1 center"><a href="#">INTERFACING DELTA PLC WITH FACTORY IO</a></li>
+                <li class="item1 center"><a href="#">INTERFACING INTOUCH SCADA WITH SQLSERVER</a></li>
+                <li class="item1 center"><a href="#">INTERFACING PYTHON WITH SQL SERVER</a></li>
+
+            </ul>
+        </div>
+    </section>
+
+</body>
+
+</html>

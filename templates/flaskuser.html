@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <style>
+    .navbar {
+      color: blanchedalmond;
+      background-color: black;
+    }
+
+    .navbar ul li a {
+      /* display block to give padding */
+      color: white;
+      display: block;
+      padding: 3px 22px;
+      border-radius: 20px;
+      /* to remove underlines we use text decoration */
+      text-decoration: none;
+
+    }
+
+    .navbar ul li a:hover {
+      color: black;
+      background-color: white;
+
+    }
+
+    .center {
+      text-align: center;
+
+    }
+
+    .qtitle {
+      font-weight: 900;
+    }
+
+    #brief {
+      display: flex;
+      flex-direction: column;
+      padding: 65px 181px;
+      /* height: 2907px; */
+      /* to bring content to center */
+      justify-content: center;
+      align-items: center;
+    }
+
+    #brief::before {
+      content: "";
+      /* to get image at background */
+      background-color: cyan;
+      position: absolute;
+      height: 0%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.59;
+
+    }
+
+    .qimg img {
+      width: 805px;
+    }
+ 
+
+    /* .qimg img{
+      height: 200px;
+
+    } */
+ footer {
+  background-color: black;
+  height: 200px;
+  margin-top: 11px;
+}
+.a {  display: flex;
+     justify-content: center;
+     align-items: center;
+
+}
+.b{
+border: 10px white solid;
+background-color: white;
+border-radius: 20px;
+}
+  </style>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" media="screen and (max-width:952px)" / href="/static/phoneflask.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+  <title>flasklogin</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script data-ad-client="ca-pub-8019090857172030" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="top">
+  <a class="navbar-brand" href="#">NAKSHAUTOMATION</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/logout">Logout</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/pyhmi">PYHMI</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/ask">Q&A</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Overview
+        </a>
+        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+          
+<a class="dropdown-item" href="#">PLC INTERFACING</a>
+<a class="dropdown-item" href="/plcove">1.Plc Overview</a>
+<a class="dropdown-item" href="/plcpro">2.Plc Programming</a>
+<a class="dropdown-item" href="/plcwplsoft">3.Interfacing Plc with wplsoft</a>
+<a class="dropdown-item" href="/kep">4.Interfacing Plc with Intouch scada</a>
+<a class="dropdown-item" href="/sqlscada">5.Interfacing Plc with Sqlserver </a>
+<a class="dropdown-item" href="/pythonplc">6.Interfacing Plc with Python</a>
+<div class="dropdown-divider"></div>
+ <a class="dropdown-item" href="#">FLASK FRAMEWORK</a>
+<a class="dropdown-item" href="/flask">1.FLASK</a>
+<a class="dropdown-item" href="/flaskuser">2.Flask login&Register</a>
+<a class="dropdown-item" href="/flaskvalid">3.Flask validation</a>
+ <div class="dropdown-divider"></div>
+  <a class="dropdown-item" href="#">PYTHON APPLICATIONS</a>
+<a class="dropdown-item" href="/reminder">1.Water Reminder</a>
+
+	</div>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
+
+  <section id="brief">
+
+    <h2 class="qtitle center">Register In Flask</h2>
+
+    <div class="q1">
+    
+
+      <p class="explain ">In this tutorial i will show you how easily you can build flask login and register.<br>
+        First step is to create an HTML file for taking user inputs in registration form field.<br>
+      </p>
+
+      <h4>1. Create Form</h4>
+      <p>Creating form is very easy now using bootstrap you can take form templates and use them.<br><br>
+     </p>
+    </div>
+    
+  
+    <xmp id="p1" class="explain1">
+      <form id="regform" method="POST">
+          Enter Email:<input type="text" id="regemailid" class="form-control"
+           name="uname" placeholder="Email Adress">
+          Enter Password:<input type="password" id="regpasswordid"
+           class="form-control" name="passw" placeholder="Password">
+          <button id="reg" class="btn btn-primary" type="submit">submit</button>   
+      </form>
+    </xmp>
+    <button class="btn btn-secondary but" onclick="copyToClipboard('#p1')">Copy</button>
+  
+    
+
+
+    
+ <hr>
+
+  <div class="explain">
+      
+  <h4>2. Flask Code</h4></div>
+       
+    <xmp id="p2" class="explain1">
+
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root@localhost/akshauto'
+db = SQLAlchemy(app)    
+class Naksh_main_tb(db.Model):
+    sno = db.Column(db.Integer, primary_key=True)
+    datetime = db.Column(db.String(12), unique=False)
+    email = db.Column(db.String(20), unique=True, nullable=False)
+    password = db.Column(db.String(20), unique=True, nullable=False)
+    hashCode = db.Column(db.String(120))      
+@app.route('/register',methods=['GET','POST'])
+def register():
+    if(request.method=='POST'):
+     "fetch entry from database"
+      uname=request.form.get('uname')
+      passw=request.form.get('passw')
+      existing_entry=Naksh_main_tb.query.filter_by(email=uname).first()
+      if existing_entry:
+            flash("Email already exist","danger")
+            return redirect(url_for("register"))  
+        new_entry=Naksh_main_tb(email=uname,password=passw)
+        db.session.add(new_entry)
+        db.session.commit()
+        return redirect(url_for("login"))
+    return render_template("register.html")
+    </xmp>
+    <button class="btn btn-secondary but" onclick="copyToClipboard('#p2')">Copy</button>
+    
+  <div>
+    <p class="explain">
+      1. Okay so when i click on register button it will redirect me to this /register route.<br>
+      2. In this route it will go to  <p class="codefont">def register():</p> then it will check if condition and since form is not submitted yet it will <br>return render_ template register.html which will display form<br>
+      registration.html
+
+      
+    </p>
+      <div class="qimg">
+        <img src="/static/flask2.PNG" alt="">
+  
+      </div>
+      <p class="explain">
+        4. After filling form when you enter on submit button it will first check form method <br>
+        <p class="codefont">if(request.method=='POST'):</p><br>
+        5.We used post method so it will go inside if and take user inputs from form and will store<br>
+        it in variables uname and passw<br>
+        <p class="codefont">uname=request.form.get('uname')<br></p>
+        <p class="codefont">passw=request.form.get('passw')<br></p>
+        6. Here we are fetching form inputs via name field.You need to provide same name<br> which  you inserted at time of creating form which is 'uname' and 'passw'<br>
+        7. Once you get user inputs you can check if they are already stored in database<br>
+        <p class="codefont">existing_entry=Naksh_main_tb.query.filter_by(email=uname).first()</p>
+        8. This command checks email which is database column name and uname <br>which is python variable storing user input from form<br>
+        9. If email is already registered then it will flash messagesaying  email exist<br>
+        flashing is done using jinja 2 which will be covered later.
+        <p class="codefont"> return redirect(url_for("register"))</p>
+        10. This code will check url for register i.e. <br>
+        <p class="codefont">def register():</p>
+        11. If existing entry is not present in databse then it will create new entry in databse<br>
+        <p class="codefont">new_entry=Naksh_main_tb(email=uname,password=passw)</p>
+        email is coulmn name which will store uname value<br>
+        password is also column name which will store passw value.<br>
+        12.Now insert it into databse using below commands
+        <p class="codefont">db.session.add(new_entry)</p>
+        <p class="codefont"> db.session.commit()</p>
+        13.once registration is done you can now go to login page using return url for login<br>
+        or by returning render templates    
+      </p>
+       
+</div>
+
+<h2 class="qtitle center">Login In Flask</h2>
+<div class="q1">
+  <p class="explain">
+    Once Registration is done now what you can do is allow login only for registered users.
+    1. Create login form in html page.
+  </p>
+</div>
+  
+<xmp id="p3" class="explain1">
+  <form method="POST">      
+  <div class="form-group">
+    Username:<input type="text" class="form-control" name="uname"
+    id="emailid" placeholder="Username">
+  </div>
+  <div class="form-group">
+    password:<input type="password" class="form-control" name="passw"
+    id="passwordid" placeholder="Password">
+    </div>
+    <div class="fogot-link ">
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="remember">
+      <label for="remember">Remember Password</label>
+    </div>
+    </div>
+    <input type="submit" class="btn btn-primary">
+  <p class="mt-3">Don't have an account <a href="/register">Register Now</a></p>
+</form>
+</xmp>
+<button class="btn btn-secondary but" onclick="copyToClipboard('#p3')">Copy</button>
+
+<div class="explain">
+  
+  
+    
+  <h4>2. Flask Code</h4></div>
+  <xmp id="p4" class="explain1">
+@app.route('/login',methods=['GET','POST'])
+def login():
+ if(request.method=='POST'):
+  "fetch entry from database"
+  louname=request.form.get('uname')
+  lopassw=request.form.get('passw')
+  session['uname']=request.form['uname']
+  login=Naksh_main_tb.query.filter_by(email=louname,password=lopassw).first()
+  if login is not None:
+          return render_template('nakshoverview.html')
+ return render_template("login.html")
+
+
+  </xmp>
+  <button class="btn btn-secondary" onclick="copyToClipboard('#p4')">Copy</button>
+
+
+
+    
+    
+  <div>
+    <p class="explain mar">
+      Process is similar to register just need to compare user inputs with database content<br>
+      1. Okay so when i click on login button it will redirect me to this /login route.<br>
+      2. In this route it will go to<br></p>
+      <p class="codefont mar">def login():</p>
+      <p class="explain mar">
+
+      then it will check if condition and since form is not submitted yet<br> it will return template login.html which will display form 
+    </p>
+      <div class="qimg mar">
+        <img src="/static/flask3.PNG" alt="">
+  
+      </div>
+      <p class="explain mar">
+      3. After filling form when you enter on submit button it will first check form method<br></p>
+        <p class="codefont mar">if(request.method=='POST'):</p>
+	<p class="explain mar">
+
+        4. We used post method so it will go inside if condition and take user inputs from form and will store<br>
+        it in variables louname and lopassw<br>
+        5. Now this python variables have taken data from form fields so you just need to compare it<br>
+	with data present in database for that<br> </p>
+	<p class="codefont mar">login=Naksh_main_tb.query.filter_by<br>(email=louname,password=lopassw).first()</p>
+	<p class="explain mar">
+
+        6.As i had told you this command is for reading database content <br>
+	7. It will check if louname and lopassw are present in email and password columns of database<br></p>
+
+        <p class="codefont mar">if login is not None:</p>
+	<p class="explain mar">
+
+        8.Now if login is not none it means login form content matches with database content and you can<br>
+        render template to desired html
+   
+
+        
+        
+      </p>
+     
+    
+    
+ 
+  
+</div>
+
+  
+      <h2 class="qtitle center">You can share your difficulties related to PLC,Webdevelopment,Python,Flask framework</h2>
+
+            <form id="upload-form" action="/uploader" method="POST" enctype="multipart/form-data" onsubmit=" return askvalidateform()">
+        <div class="form-group">
+            <label for="name">Enter Name:</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+            <span id="nameerror" class="text-danger"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="comment">Ask Your Question: </label>
+            <textarea rows="5" cols="30" class="form-control " id="comment" name="comment"
+              placeholder="Ask Question"></textarea>
+            <span id="commenterror" class="text-danger"></span>
+          </div>
+        <input type="file" name="file" accept="image/" multiple>
+        <input type="submit" value="send" class="btn btn-primary">
+        </form>
+
+
+
+
+
+
+
+  </section>
+
+<footer>
+  <div class="a">
+          <a class="nav-link" href="/privacy">privacy policy</a>
+           <a class="nav-link" href="/static/about.html">AboutUs</a>
+
+  </div>
+  <div class="a">
+<a class="copyrighted-badge" title="Copyrighted.com Registered &amp; Protected" target="_blank" href="https://www.copyrighted.com/website/QjqZmRG3Uu18hu8o"><img alt="Copyrighted.com Registered &amp; Protected" border="0" width="125" height="35" srcset="https://static.copyrighted.com/badges/125x25/04_2_2x.png 2x" src="https://static.copyrighted.com/badges/125x25/04_2.png" /></a><script src="https://static.copyrighted.com/badges/helper.js"></script>
+</div>
+<div class="a">
+
+<a class="nav-link " href="https://www.linkedin.com/in/naksh-automation-61a72b1a9"><i class="fa fa-linkedin b"></i></a>
+<a class="nav-link " href="https://github.com/akashb12?tab=repositories"><i class="fa fa-github b"></i></a>
+<a class="nav-link " href="mailto:nakshautomation07@gmail.com"><i class="fa fa-envelope b"></i></a>
+
+
+</div>
+</footer>
+<script type="text/javascript">
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+</script>
+<script type="text/javascript">
+    function askvalidateform() {
+      // for storing regemailid and regpasswordid value in variables
+      var askname = document.getElementById('name').value;
+      var askcomment = document.getElementById('comment').value;
+
+      //    this is for setting email and password check
+      var namecheck = /^[A-Za-z_0-9- !@#$%^&*()/.,:;"']{3,}$/;
+      var commentcheck = /^[A-Za-z_0-9- !@#$%^&*().,:;"'\n]{3,}$/;
+
+      if (namecheck.test(askname)) {
+
+
+        document.getElementById('nameerror').innerHTML = " ";
+        // return true;
+
+      } else {
+        document.getElementById('nameerror').innerHTML = "**Error";
+        alert("error:Please Enter Valid Name");
+        return false;
+
+      }
+      if (commentcheck.test(askcomment)) {
+        document.getElementById('commenterror').innerHTML = "";
+        // return true;
+
+
+
+      } else {
+        document.getElementById('commenterror').innerHTML = "**Error";
+        alert("error:Please Enter Valid Comment")
+        return false;
+      }
+      // to insert into localstorage
+
+    }
+  </script>
+
+</body>
+</html>

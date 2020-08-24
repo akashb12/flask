@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <style>
+        .navbar {
+            color: blanchedalmond;
+            background-color: black;
+        }
+
+        .navbar ul li a {
+            /* display block to give padding */
+            color: white;
+            display: block;
+            padding: 3px 22px;
+            border-radius: 20px;
+            /* to remove underlines we use text decoration */
+            text-decoration: none;
+
+        }
+
+        .navbar ul li a:hover {
+            color: black;
+            background-color: white;
+
+        }
+
+        .center {
+            text-align: center;
+
+        }
+
+        .qtitle {
+            font-weight: 900;
+        }
+
+        #brief {
+            display: flex;
+            flex-direction: column;
+            padding: 65px 181px;
+            /* height: 2907px; */
+            /* to bring content to center */
+            justify-content: center;
+            align-items: center;
+        }
+
+        #brief::before {
+            content: "";
+            /* to get image at background */
+            background-color: cyan;
+            position: absolute;
+            height: 0%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.59;
+
+        }
+
+        .qimg img {
+            width: 805px;
+        }
+        .size{
+            font-size: 0.6rem;
+        }
+
+        /* .qimg img{
+      height: 200px;
+
+    } */
+ footer {
+  background-color: black;
+  height: 200px;
+  margin-top: 11px;
+}
+.a {  display: flex;
+     justify-content: center;
+     align-items: center;
+
+}
+.b{
+border: 10px white solid;
+background-color: white;
+border-radius: 20px;
+}
+    </style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" media="screen and (max-width:952px)" / href="/static/phoneflask.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script data-ad-client="ca-pub-8019090857172030" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="top">
+        <a class="navbar-brand" href="#">NAKSHAUTOMATION</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/logout">Logout</a>
+            </li>
+      
+            <li class="nav-item">
+              <a class="nav-link" href="/pyhmi">PYHMI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/ask">Q&A</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Overview
+              </a>
+              <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                
+<a class="dropdown-item" href="#">PLC INTERFACING</a>
+<a class="dropdown-item" href="/plcove">1.Plc Overview</a>
+<a class="dropdown-item" href="/plcpro">2.Plc Programming</a>
+<a class="dropdown-item" href="/plcwplsoft">3.Interfacing Plc with wplsoft</a>
+<a class="dropdown-item" href="/kep">4.Interfacing Plc with Intouch scada</a>
+<a class="dropdown-item" href="/sqlscada">5.Interfacing Plc with Sqlserver </a>
+<a class="dropdown-item" href="/pythonplc">6.Interfacing Plc with Python</a>
+<div class="dropdown-divider"></div>
+ <a class="dropdown-item" href="#">FLASK FRAMEWORK</a>
+<a class="dropdown-item" href="/flask">1.FLASK</a>
+<a class="dropdown-item" href="/flaskuser">2.Flask login&Register</a>
+<a class="dropdown-item" href="/flaskvalid">3.Flask validation</a>
+ <div class="dropdown-divider"></div>
+  <a class="dropdown-item" href="#">PYTHON APPLICATIONS</a>
+<a class="dropdown-item" href="/reminder">1.Water Reminder</a>
+
+          </div>
+        </li>
+              </div>
+            </li>
+      
+          </ul>
+      
+        </div>
+      </nav>
+      
+    <section id="brief">
+
+
+
+        <h2 class="qtitle center">Drink Water Reminder</h2>
+
+        <div class="q1">
+
+            <p class="explain ">Main aim of this project is to make you understand how to convert any python file to run
+                in background or auto schedule your python script.
+                <br><br>
+
+                To explain you all in a better way I am taking example of a Drink water notification which will remind
+                you to drink water after every one hour.
+                <br><br>
+            <h4>Writing a code</h4>
+            <br>
+            You need to install plyer library . This library is used to give prompt or notification.
+            <br><br>
+            We want our code to notify us after every 1hour. so you can create a while loop which will run after 1 hour,
+            and for doing this you need to import module called time.
+            <br>
+            Title gives you the title for your notification and you can give any message whatever you wish to.
+            <br> You can also give the app icon, make sure icon is a file with an extension of .ico otherwise it will
+            show you an error.
+            <br>
+            Timeout is the time for which you want to display the notification.
+            <br> And sleeptime is 1hr.
+
+            </p>
+        </div>
+<!-- 
+        <div class="qimg">
+            <img src="/static/code.PNG" alt="">
+
+        </div> -->
+        <xmp id="p4" class="explain1">
+        import time
+        from plyer import notification
+        if __name__=="__main__":
+          while True:
+            notification.notify(
+              title="Please Drink Water",
+              message = " total daily water intake: 3.7 liters (15 cups) for <br>
+              the average adult male and 2.7 liters (11 cups) for the average adult female.",
+              app_icon="C:\study material\python\water\mmm.ico",
+              timeout=5
+                 )
+            time.sleep(60*60)
+          
+            </xmp>
+            <button class="btn btn-secondary" onclick="copyToClipboard('#p4')">Copy</button>
+          
+        
+
+
+
+
+        <div class="q1">
+            <p class="explain ">Now since the code is ready lets learn how to auto-schedule this.<br>
+                Open the task schedular using search feature in windows. and then go to create task.</p>
+                <br>
+                <br>
+                <div class="qimg">
+                    <img src="/static/task1.PNG" alt="">
+        
+                </div>
+                <br>
+                <br>
+                <p class="explain">Give a name to your task as "drink water reminder" or <br> anything which relates yourapplication and go to actions to create a new actions.</p>
+                <br>
+                <br>
+        </div>
+                <div class="qimg">
+                    <img src="/static/task2.PNG" alt="">
+        
+                </div>
+
+              <div class="q1">
+                <p class="explain">
+                Under program/script we need to mention the path where the python executable is located.<br>
+                There are many way to find this, one way is to open the command prompt .<br>
+
+                 comamnds<br>
+                 >python<br>
+                 >import os<br>
+                 >import sys <br>
+                 >os.path.dirname(sys.executable)<br>
+
+                 this will give you the path but this is not in windows friendly way. <br>To make it in a windows friendly format just remove all the <br>adition / from the path and then apend it with python.exe.<br>
+                 <span class="size">eg:SC:\Users\Nidhi\AppData\Local\Programs\Python\Python38\python.exe</span></p>
+                 <!-- <p class="small">eg:SC:\Users\Nidhi\AppData\Local\Programs\Python\Python38\python.exe</p> -->
+                
+               
+               
+                 <div class="qimg">
+                    <img src="/static/task3.PNG" alt="">
+        
+                </div>
+                
+            </div>
+                <br>
+                <p class="explain">
+                Then you need to give an argument, argument is nothing but the path of the file which you want to run.<br> 
+                <br>
+            </p>
+                <div class="qimg">
+                    <img src="/static/task4.png" alt="">
+        
+                </div>
+                <br>
+            <p class="explain">
+                If incase your application does not work then cover the argument in double inverted commas.
+                <br>
+
+                Then go to trigger, trigger is nothing but when you want to schedule your application. Since we already mentioned in the code we need not do this step.<br>
+            </p>
+                <div class="qimg">
+                    <img src="/static/task5.PNG" alt="">
+        
+                </div>
+                <p class="explain">
+                And Thats it!! 
+                But this method works only if user is logged on.
+                If you have any better choice then this then please reply in a comment section..</p>
+                <br>
+                <br>
+
+                
+
+            
+    
+     
+            
+
+            </div>
+
+      <h2 class="qtitle center">You can share your difficulties related to PLC,Webdevelopment,Python,Flask framework</h2>
+
+
+            <form id="upload-form" action="/uploader" method="POST" enctype="multipart/form-data" onsubmit=" return askvalidateform()">
+        <div class="form-group">
+            <label for="name">Enter Name:</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+            <span id="nameerror" class="text-danger"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="comment">Ask Your Question: </label>
+            <textarea rows="5" cols="30" class="form-control " id="comment" name="comment"
+              placeholder="Ask Question"></textarea>
+            <span id="commenterror" class="text-danger"></span>
+          </div>
+        <input type="file" name="file" accept="image/" multiple>
+        <input type="submit" value="send" class="btn btn-primary">
+        </form>
+
+
+
+           </section>
+	   <footer>
+  <div class="a">
+          <a class="nav-link" href="/privacy">privacy policy</a>
+           <a class="nav-link" href="/static/about.html">AboutUs</a>
+
+  </div>
+  <div class="a">
+<a class="copyrighted-badge" title="Copyrighted.com Registered &amp; Protected" target="_blank" href="https://www.copyrighted.com/website/QjqZmRG3Uu18hu8o"><img alt="Copyrighted.com Registered &amp; Protected" border="0" width="125" height="35" srcset="https://static.copyrighted.com/badges/125x25/04_2_2x.png 2x" src="https://static.copyrighted.com/badges/125x25/04_2.png" /></a><script src="https://static.copyrighted.com/badges/helper.js"></script>
+</div>
+<div class="a">
+
+<a class="nav-link " href="https://www.linkedin.com/in/naksh-automation-61a72b1a9"><i class="fa fa-linkedin b"></i></a>
+<a class="nav-link " href="https://github.com/akashb12?tab=repositories"><i class="fa fa-github b"></i></a>
+<a class="nav-link " href="mailto:nakshautomation07@gmail.com"><i class="fa fa-envelope b"></i></a>
+
+
+</div>
+<div class="a">
+
+<a class="nav-link " href="#top"><i class="fa fa-chevron-up"></i></a>
+
+</div>
+
+</footer>
+
+
+            <script type="text/javascript">
+              function copyToClipboard(element) {
+                var $temp = $("<input>");
+                $("body").append($temp);
+                $temp.val($(element).text()).select();
+                document.execCommand("copy");
+                $temp.remove();
+              }
+              </script>
+             <script type="text/javascript">
+    function askvalidateform() {
+      // for storing regemailid and regpasswordid value in variables
+      var askname = document.getElementById('name').value;
+      var askcomment = document.getElementById('comment').value;
+
+      //    this is for setting email and password check
+      var namecheck = /^[A-Za-z_0-9- !@#$%^&*()/.,:;"']{3,}$/;
+      var commentcheck = /^[A-Za-z_0-9- !@#$%^&*().,:;"'\n]{3,}$/;
+
+      if (namecheck.test(askname)) {
+
+
+        document.getElementById('nameerror').innerHTML = " ";
+        // return true;
+
+      } else {
+        document.getElementById('nameerror').innerHTML = "**Error";
+        alert("error:Please Enter Valid Name");
+        return false;
+
+      }
+      if (commentcheck.test(askcomment)) {
+        document.getElementById('commenterror').innerHTML = "";
+        // return true;
+
+
+
+      } else {
+        document.getElementById('commenterror').innerHTML = "**Error";
+        alert("error:Please Enter Valid Comment")
+        return false;
+      }
+      // to insert into localstorage
+
+    }
+  </script>
+
+</body>
+
+</html>

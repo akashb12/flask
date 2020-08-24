@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <style>
+   
+   .navbar {
+      color: blanchedalmond;
+      background-color: black;
+    }
+
+    .navbar ul li a {
+      /* display block to give padding */
+      color: white;
+      display: block;
+      padding: 3px 22px;
+      border-radius: 20px;
+      /* to remove underlines we use text decoration */
+      text-decoration: none;
+
+    }
+
+    .navbar ul li a:hover {
+      color: black;
+      background-color: white;
+
+    }
+    .center{
+      text-align: center;
+
+    }
+    .qtitle{
+      font-weight: 900;
+    }
+
+    #brief {
+      display: flex;
+      flex-direction: column;
+      padding: 65px 181px;
+      /* height: 2907px; */
+      /* to bring content to center */
+      justify-content: center;
+      align-items: center;
+    }
+
+    #brief::before {
+      content: "";
+      /* to get image at background */
+      background-color: cyan;
+      position: absolute;
+      height: 0%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.59;
+
+    }
+    .qimg img {
+    width: 805px;
+}
+    /* .qimg img{
+      height: 200px;
+
+    } */
+footer {
+  background-color: black;
+  height: 200px;
+  margin-top: 11px;
+}
+.a {  display: flex;
+     justify-content: center;
+     align-items: center;
+
+}
+.b{
+border: 10px white solid;
+background-color: white;
+border-radius: 20px;
+}
+
+  </style>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" media="screen and (max-width:952px)" / href="/static/phoneplcpro.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+
+  <title>Programming</title>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-165252921-1"></script>
+<script>
+	
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-165252921-1');
+</script>
+<script async="async" data-cfasync="false" src="//pl15452892.passtechusa.com/c58f51cad3a696cc027086aa4e89856d/invoke.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script data-ad-client="ca-pub-8019090857172030" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="top">
+  <a class="navbar-brand" href="#">NAKSHAUTOMATION</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/logout">Logout</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/pyhmi">PYHMI</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/ask">Q&A</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Overview
+        </a>
+        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+          
+<a class="dropdown-item" href="#">PLC INTERFACING</a>
+<a class="dropdown-item" href="/plcove">1.Plc Overview</a>
+<a class="dropdown-item" href="/plcpro">2.Plc Programming</a>
+<a class="dropdown-item" href="/plcwplsoft">3.Interfacing Plc with wplsoft</a>
+<a class="dropdown-item" href="/kep">4.Interfacing Plc with Intouch scada</a>
+<a class="dropdown-item" href="/sqlscada">5.Interfacing Plc with Sqlserver </a>
+<a class="dropdown-item" href="/pythonplc">6.Interfacing Plc with Python</a>
+<div class="dropdown-divider"></div>
+ <a class="dropdown-item" href="#">FLASK FRAMEWORK</a>
+<a class="dropdown-item" href="/flask">1.FLASK</a>
+<a class="dropdown-item" href="/flaskuser">2.Flask login&Register</a>
+<a class="dropdown-item" href="/flaskvalid">3.Flask validation</a>
+ <div class="dropdown-divider"></div>
+  <a class="dropdown-item" href="#">PYTHON APPLICATIONS</a>
+<a class="dropdown-item" href="/reminder">1.Water Reminder</a>
+
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
+  <section id="brief">
+
+
+    
+      <h2 class="qtitle center">Common Latched circuit Application</h2>
+    
+    <div class="q1">
+       
+      <p class="explain center">1.Turn on the switch, the light will be on;</br>
+        2.Turn of the switch the light will be off </br>
+        X0 is on pushbutton<br>
+        X1 is off pushbutton
+      </p>
+    </div>
+      
+      <div class="qimg">
+        <img src="/static/img2.PNG" alt="">
+
+      </div>
+      <br>
+      <div class="q1">
+      <p class="explain center"> When x0 (normally open) is pressed y0 (light) will turn on and when x1(normally
+        closed)is pressed y0 will turn off.
+        Since it is pushbutton, latching is required in order for light to remain on untill and unless x1 is
+        pressed.
+      </p>
+    </div>
+
+
+
+
+
+    <!-- <div class="q3"> -->
+
+      <h2 class="qtitle center">Interlock control circuit Application</h2>
+    <!-- </div> -->
+      <div class="qimg">
+        <img src="/static/img1.PNG" alt="">
+
+      </div>
+      <div class="q1">
+      <p class="explain center">The Entry/Exit of the parking lot is a single lanne passage. By controlling the
+        indicator, the program ensures that only one car can pass through the Entry/Exit so as to prevent
+        car accident between entering and leaving cars</br>
+        </br>
+        X0 : Car entering sensor.When a car passes through the sensor,X0=on<br>
+        X1 :Car leaving sensor.When a car passes through the sensor,X1=on<br>
+        y0:Entering Car indicator( on means go and off means stop) <br>
+        y0:leaving Car indicator( on means go and off means stop)
+      </p>
+    </div>
+      <div class="qimg">
+        <img src="/static/img3.PNG" alt="">
+
+      </div>
+    <div class="q1">
+      <p class="explain center"> When x0 sensor turns on that means car has entered and y0 will turn on.
+        but y1 should be off when y0 is on in order to prevent accident . Therefore y0 places normally
+        closed in
+        series with x1 sensor so that y0(leaving indicator) should not be turned on
+      </p>
+    </div>
+
+      <h2 class="qtitle center">Practical Application</h2>
+      
+    <div class="q1">
+      <p class="explain center">1.A wood saw, a fan and a lubrication pump, all go ON when the start button is
+        turned On. A stop button when pressed stops the saw only. The fan has to run an additional 5 sec to
+        blow
+        the chip away and the lubrication pump has to run for 8 sec after the shutdown of the wood saw. Draw
+        the
+        Plc ladder diagram
+      </p>
+    </div>
+      <div class="qimg">
+        <img src="/static/img4.PNG" alt="">
+      </div>
+      <div class="q1">
+      <p class="explain center">consider X0 as start pushbutton.
+        <br>When start button is pressed, a wood saw,fan and lubricating pump should remain on therefor
+        latching is required<br>
+        When stop button is pressed the saw turns off immidiately while the fan and lubricating pump turns
+        off after 5 and 8 sec respectively
+        <br> Therefore 2 timer is triggered immidiately when the stop button is pressed.<br>
+        Since fan and lubricating pump should stop,timers are placed normally closed in series in that
+        respective rung.
+      </p>
+    </div>
+    
+      <h2 class="qtitle center">Practical Application: To calculate speed and length of the bag</h2>
+      <div class="q1">
+      <p class="explain">x0 is photoelectric Sensor 1<br>
+        x1 is photoelectric Sensor 2
+      </div>
+
+      <div class="q1">
+        <p class="explain center">Requireent: 2 Sensors placed at some known distance, consider 0.5meters<br>
+          From distance formula speed=distance/time<br>
+          First we have to calculate speed at which bag is moving or the speed
+          of the conveyor<br>
+          If the speed is not known we can calculate it using 2 sensors placed at 0.5 distance<br>
+          speed=0.5/time taken by the bag to travel from first sensor to the second sensor.
+        </p>
+      </div>
+
+
+
+        <div class="qimg">
+          <img src="/static/img5.PNG" alt="">
+        </div>
+
+
+      <div class="q1">
+        <p class="explain center">Timer T250 is a retentive timer. It turns on as soon as sensor X0 detects the bag and when second sensor detects the bag, the time is stored in some data register<br>
+        when 0.5m distance is divided by this time we get speed of the conveyor </p><br>
+      </div>
+         <h2 class="qtitle center">Question & Answers</h2>
+<p class="explain center">Please check below button to view images uploaded for answers according to sno.</p>
+<p class="explain ">
+          <a href=" https://drive.google.com/folderview?id=1__-wkIYSXq5jVKZQsXCSC3UoX1EJF4kg"><button class="btn btn-primary">Images</button></a>
+</p>
+          <div class="qimg center">
+        {% for i in range(image|length)%}
+<p class="explain center"> <strong>Srno:-</strong> {{question[i].sno }} </p>
+<p class="explain center"><strong> Name:-</strong> {{question[i].name }} </p>
+<p class="explain center"><strong> Date:-</strong> {{question[i].datetime }} </p>
+<p class="explain center"><strong> Question:-</strong> {{question[i].comment }} </p>
+<img src='{{url_for("send_img",filename=image[i])}}'>
+<p class="explain center"><strong>Answer:-</strong> {{question[i].answer }} </p>
+<a href='/edit/{{question[i].sno}}'><button class="btn btn-primary">Answer</button></a>
+<hr style="height:1px;border:none;color:black;background-color:black;">
+
+{% endfor %}
+     </div>
+
+
+
+
+
+
+
+
+    
+
+    <!-- <section id="brief1"> -->
+      <h2 class="qtitle center">You can share your difficulties related to PLC,Webdevelopment,Python,Flask framework</h2>
+  
+            <form id="upload-form" action="/uploader" method="POST" enctype="multipart/form-data" onsubmit=" return askvalidateform()">
+        <div class="form-group">
+            <label for="name">Enter Name:</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+            <span id="nameerror" class="text-danger"></span>
+          </div>
+         
+          <div class="form-group">
+            <label for="comment">Ask Your Question: </label>
+            <textarea rows="5" cols="30" class="form-control " id="comment" name="comment"
+              placeholder="Ask Question"></textarea>
+            <span id="commenterror" class="text-danger"></span>
+          </div>
+        <input type="file" name="file" accept="image/" multiple>
+        <input type="submit" value="send" class="btn btn-primary">
+        </form>
+    <!-- </section> -->
+
+
+
+
+  </section>
+
+<footer>
+  <div class="a">
+          <a class="nav-link" href="/privacy">privacy policy</a>
+           <a class="nav-link" href="/static/about.html">AboutUs</a>
+
+  </div>
+  <div class="a">
+<a class="copyrighted-badge" title="Copyrighted.com Registered &amp; Protected" target="_blank" href="https://www.copyrighted.com/website/QjqZmRG3Uu18hu8o"><img alt="Copyrighted.com Registered &amp; Protected" border="0" width="125" height="35" srcset="https://static.copyrighted.com/badges/125x25/04_2_2x.png 2x" src="https://static.copyrighted.com/badges/125x25/04_2.png" /></a><script src="https://static.copyrighted.com/badges/helper.js"></script>
+</div>
+<div class="a">
+
+<a class="nav-link " href="https://www.linkedin.com/in/naksh-automation-61a72b1a9"><i class="fa fa-linkedin b"></i></a>
+<a class="nav-link " href="https://github.com/akashb12?tab=repositories"><i class="fa fa-github b"></i></a>
+<a class="nav-link " href="mailto:nakshautomation07@gmail.com"><i class="fa fa-envelope b"></i></a>
+
+
+</div>
+<div class="a">
+
+<a class="nav-link " href="#top"><i class="fa fa-chevron-up"></i></a>
+
+</div>
+
+</footer>
+<script type="text/javascript">
+    function askvalidateform() {
+      // for storing regemailid and regpasswordid value in variables
+      var askname = document.getElementById('name').value;
+      var askcomment = document.getElementById('comment').value;
+
+      //    this is for setting email and password check
+      var namecheck = /^[A-Za-z_0-9- !@#$%^&*()/.,:;"']{3,}$/;
+      var commentcheck = /^[A-Za-z_0-9- !@#$%^&*().,:;"'\n]{3,}$/;
+
+      if (namecheck.test(askname)) {
+
+
+        document.getElementById('nameerror').innerHTML = " ";
+        // return true;
+
+      } else {
+        document.getElementById('nameerror').innerHTML = "**Error";
+        alert("error:Please Enter Valid Name");
+        return false;
+
+      }
+      if (commentcheck.test(askcomment)) {
+        document.getElementById('commenterror').innerHTML = "";
+        // return true;
+
+
+
+      } else {
+        document.getElementById('commenterror').innerHTML = "**Error";
+        alert("error:Please Enter Valid Comment")
+        return false;
+      }
+      // to insert into localstorage
+
+    }
+  </script>
+</body>
+
+</html>

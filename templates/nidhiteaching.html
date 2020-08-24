@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<style>
+section.first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(/static/rectangle.png)no-repeat center center/cover;
+    /* padding: 20px 56px; */
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 20px 58px;
+}
+.firstdiv {
+    padding: 2px 90px;
+}
+.seconddiv {
+    padding: 2px 105px;
+}
+
+a#navbarDropdownMenuLink {
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 61px;
+    font-size: 9px;
+    width: 101px;
+}
+.full {
+    margin: 20px 85px;
+}
+.border1 {
+    padding: 68px;
+}
+    .brief2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5pc;
+
+    }
+    section.second {
+    display: flex;
+}
+nav.navbar.navbar-expand-lg.navbar-light {
+    margin: 20px 58px;
+}
+.footer {
+      font-size: 0.6rem;
+    }
+    footer {
+      background: url(/static/footer.png)no-repeat center center/cover;
+      position: absolute;
+      height: 80%;
+      width: 100%;
+      z-index: -1;
+      opacity: 1;
+    }
+    .foot {
+      color: white;
+      font-size: 0.7rem;
+    }
+</style>
+</head>
+<body>
+    <section class="full">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="#">
+            <img src="/static/bikelogo.png" width="30" height="30" alt=""><strong>&nbsp;RENTZ</strong>
+          </a>
+          <a class="navbar-brand" href="#">
+            <img src="/static/locationlogo.png" width="30" height="30" alt=""><strong><small>&nbsp;Kolva,Goa</small></strong>
+          </a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li> -->
+          </ul>
+          
+            <a class="nav-link" href="#">DEALS</a>
+            <a class="nav-link" href="#">REVIEWS</a>
+            <a class="nav-link" href="#">WELCOME USER</a>
+          
+        </div>
+      </nav>
+      <section class="first">
+          <div class="firstdiv">
+          <h6><small>Home\Goa\Rentals</small></h6>
+          <h3><strong>Rental Bikes In Kolva,Goa</strong></h3>
+        </div>
+
+     
+      <div class="seconddiv">
+       
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            SortBy
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        
+      </div>
+    </section>
+    <section class="second">
+        <div class="radio">
+            <div>
+            <p><strong>Type</strong></p>
+            <input type="radio" id="huey" name="drone" value="huey"
+                   checked>
+            <label for="huey">ShowAll</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="dewey" name="drone" value="dewey">
+            <label for="dewey">Only Cars</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="louie" name="drone" value="louie">
+            <label for="louie">Only Bikes</label>
+          </div>
+        </div>
+          <div class="images">
+            <section class="brief2">
+                
+                <div class="border1">
+                  <div class="d">
+                    <img src="/static/dio.png" alt="">
+                  </div>    
+                </div>
+                <div class="border1">
+                  <div class="d">
+                    <img src="/static/activa.PNG" alt="">
+                  </div>
+                </div>
+                <div class="border1">
+                  <div class="d">
+                    <img src="/static/bike.png" alt="">
+                  </div>
+                </div>
+              </section>
+              <section class="brief2">
+                
+                <div class="border1">
+                  <div class="d">
+                    <img src="/static/dio.png" alt="">
+                  </div>    
+                </div>
+                <div class="border1">
+                  <div class="d">
+                    <img src="/static/activa.PNG" alt="">
+                  </div>
+                </div>
+                <div class="border1">
+                  <div class="d">
+                    <img src="/static/bike.png" alt="">
+                  </div>
+                </div>
+              </section>
+          </div>
+    </section>
+</section>
+    <footer class="page-footer font-small unique-color-dark">
+        <div class="container text-center text-md-left mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase font-weight-bold foot"><strong>RENTZ</strong></h6>
+              <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              <p class="foot">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, dolores. Minus architecto,
+                facere aut labore velit optio reiciendis itaque inventore sunt, nisi sapiente quisquam nostrum voluptatem,
+                voluptas non ipsam doloribus.</p>
+              <div class="footer-copyright py-3 foot">© 2019 BeenCity,allrights reserved
+              </div>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase font-weight-bold foot"><small><strong>The Company</strong></small></h6><br>
+              <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              <a class="nav-link foot" href=#">About us</a><br>
+              <a class="nav-link foot" href=#">Terms & Conditions</a><br>
+              <a class="nav-link foot" href=#">Privacy Policy</a><br><br>
+              <a class="nav-link foot" href=#">Access the<strong>Admin Portal</strong></a><br>
+    
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>

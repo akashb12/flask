@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (max-width:620px)" href="/static/phoneplcove.css">
+    <title> PlC overview</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+
+        }
+           
+   .navbar {
+      color: blanchedalmond;
+      background-color: black;
+    }
+
+    .navbar ul li a {
+      /* display block to give padding */
+      color: white;
+      display: block;
+      padding: 3px 22px;
+      border-radius: 20px;
+      /* to remove underlines we use text decoration */
+      text-decoration: none;
+
+    }
+
+    .navbar ul li a:hover {
+      color: black;
+      background-color: white;
+
+    }
+
+
+
+        .center {
+            text-align: center;
+        }
+
+        .heading {
+            border: 2px solid black;
+            border-radius: 18px;
+            background-color: black;
+            color: white;
+        }
+
+        /* navbar hover */
+
+        /* section or body */
+        #brief {
+            display: flex;
+            flex-direction: column;
+            padding: 65px 181px;
+            /* height: 207px; */
+            /* to bring content to center */
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #brief::before {
+            content: "";
+            /* to get image at background */
+            
+            position: absolute;
+            height: 2000%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.59;
+
+        }
+           
+
+
+
+
+        #b {
+            height: 56px;
+            margin: 5px -20px;
+        }
+
+        #b img {
+            height: 70px;
+            margin: -10px 32px;
+
+
+        }
+
+  
+
+        .basics {
+
+            padding: 22px;
+            background: azure;
+            block-size: auto
+        }
+
+        .heading {
+            background: border-box;
+            border-style: double;
+            text-decoration: underline;
+            padding: 30px;
+            box-sizing: border-box;
+            color: darkgreen;
+        }
+
+        .index {
+            padding: 15px;
+        }
+
+        .item1 a:link,
+        .item1 a:visited {
+            background-color: white;
+            color: black;
+            border: 2px solid green;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inherit;
+        }
+
+        a:hover,
+        a:active {
+            background-color: green;
+            color: white;
+        }
+
+     im img {
+        
+        height: 13rem;
+        margin-left: 20px;
+        width: 20rem;
+    }
+
+        .headc {
+            text-align: center;
+            border: 1px black solid;
+        }
+
+    footer {
+  background-color: black;
+  height: 200px;
+  margin-top: 11px;
+}
+.a {  display: flex;
+     justify-content: center;
+     align-items: center;
+
+}
+.b{
+border: 10px white solid;
+background-color: white;
+border-radius: 20px;
+}
+    </style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-165252921-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-165252921-1');
+</script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script data-ad-client="ca-pub-8019090857172030" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"id="top">
+  <a class="navbar-brand" href="#">NAKSHAUTOMATION</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/logout">Logout</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/pyhmi">PYHMI</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/ask">Q&A</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Overview
+        </a>
+        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+          
+<a class="dropdown-item" href="#">PLC INTERFACING</a>
+<a class="dropdown-item" href="/plcove">1.Plc Overview</a>
+<a class="dropdown-item" href="/plcpro">2.Plc Programming</a>
+<a class="dropdown-item" href="/plcwplsoft">3.Interfacing Plc with wplsoft</a>
+<a class="dropdown-item" href="/kep">4.Interfacing Plc with Intouch scada</a>
+<a class="dropdown-item" href="/sqlscada">5.Interfacing Plc with Sqlserver </a>
+<a class="dropdown-item" href="/pythonplc">6.Interfacing Plc with Python</a>
+<div class="dropdown-divider"></div>
+ <a class="dropdown-item" href="#">FLASK FRAMEWORK</a>
+<a class="dropdown-item" href="/flask">1.FLASK</a>
+<a class="dropdown-item" href="/flaskuser">2.Flask login&Register</a>
+<a class="dropdown-item" href="/flaskvalid">3.Flask validation</a>
+ <div class="dropdown-divider"></div>
+  <a class="dropdown-item" href="#">PYTHON APPLICATIONS</a>
+<a class="dropdown-item" href="/reminder">1.Water Reminder</a>
+
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
+
+    <section id="brief">
+        <h1 class="heading">PLC Basics</h1>
+        <h2>Programmable Logic Controllers.</h2>
+        <div class="index">
+            <ul>
+                <li class="item1 center"><a href="#what">1. What is a PLC </a></li>
+                <li class="item1 center"><a href="#before">2. Before PLCs (Before PCs)</a></li>
+                <li class="item1 center"><a href="#adv"> 3. Advantages of PLC</a></li>
+                <li class="item1 center"><a href="#dis">4. Disadvantages of PLC</a></li>
+                <li class="item1 center"><a href="#config">5. PLC Configurations </a></li>
+                <li class="item1 center"><a href="#pc">6. PLC versus PC</a></li>
+                <li class="item1 center"><a href="#par">7. Parts of a PLC</a></li>
+                <li class="item1 center"><a href="#oper">8. PLC in Operation</a></li>
+                <li class="item1 center"><a href="#lad">9. Ladder Logic </a></li>
+                <li class="item1 center"><a href="#pro">10.Programming the PLC </a></li>
+                <li class="item1 center"><a href="#troub">12.Troubleshooting & Maintenance </a></li>
+            </ul>
+
+
+    </section>
+    <section class="brief1">
+        <div class="plc">
+            </br>
+
+            <h3 class="headc" id="what">What is PLC?</h3>
+            </br>
+            <div class="lis">
+                <p class="p"> A Programmable Logic Controllers (PLC) is a miniature industrial grade computer that
+                    contains
+                    hardware
+                    and
+                    software – capable of being programmed to perform control functions.
+                </p>
+                </br>
+            </div>
+            <h3 class="headc" id="before">Before Plc</h3>
+            <div class="lis">
+                <div class="im">
+                    <img src="/static/before.PNG">
+                </div>
+                <p>How were machines and industrial processes controlled before the advent of the PLC?
+                    One of the means for controlling machines was through the use of
+                    <li>Power Relays</li>
+                    <li>Control Relays</li>
+                </p>
+            </div>
+            </br>
+            <h5 class="heade">What are the disadvantages of relay based control systems?
+            </h5>
+            <div class="lis">
+                <li> Complexity</li>
+                <li>Costly</li>
+                <li>Hardwiring</li>
+                <li>Troubleshooting problems</li>
+                <li>Not easy to modify</li>
+                <li>Strict Maintenance routine </li>
+                <h5>Control Devices</h5>
+                <li>Rotary drum switch </li>
+                <li>Limit switch </li>
+                <li>Electromechanical Counter </li>
+                <li>Fuses </li>
+                <li>Control Transformers </li>
+                <li>Motor Starter </li>
+                <li>Solenoid Valves </li>
+            </div>
+
+        </div>
+        </br>
+        </br>
+        <h3 class="headc" id="adv"> Advantages of the PLC.
+        </h3>
+        </br>
+
+        <div class="lis">
+            <p>A Programmable Logic Controller (PLC) is a device that was invented to replace the necessary sequential
+                relay circuits for machine control. The PLC works by looking at its inputs and depending upon their
+                state, turning on/off its outputs. The user enters a program, usually via software, that gives the
+                desired results.
+            </p>
+            <li>They are re-programmable</li>
+            <li>Solid state switches last much longer than relays</li>
+            <li>Complex logics can be easily represented </li>
+            <li> Multiple devices can be embedded in one unit </li>
+            <li>Can easily be scaled up or modified</li>
+            <li> Smaller physical size than hard-wire solutions </li>
+            <li> Easier and faster to make changes. </li>
+            <li> PLCs have integrated diagnostics and override functions.</li>
+            <li> Applications can be immediately documented</li>
+            <li> Applications can be duplicated faster and less expensively.</li>
+            <li> Connection between switches/output can be modified through software easily. </li>
+            <li> Troubleshooting is Easier and Faster. </li>
+            <li> Ease of Maintenance – less downtime.</li>
+            <li> Can withstand severe environmental conditions. </li>
+            <li> Reliable components make for long uptime before failure </li>
+            <li> Less amount of Space Needed </li>
+            </br>
+            </br>
+        </div>
+        <h3 class="headc" id="dis"> Disadvantages of the PLC.
+        </h3>
+        </br>
+        <div class="lis">
+            <li>Most PLCs manufacturers offer only closed architectures for their products .</li>
+            <li> PLC devices are proprietary, proprietary, which means that parts and from one manufacturer can’t easily
+                be used in combination with parts of another manufacturer, which limits the design and cost options.
+            </li>
+            <li> Subject to the limitations imposed by semiconductor based systems. </li>
+            <li> Setup and training costs could be high</li>
+            </br>
+            </br>
+            <h3 class="headc" id="config">PLC configuration</h3>
+            </br>
+            <li>Modular Configuration</li>
+            <li>Fixed configuration</li>
+            </br>
+            <h3 class="headc" id="pc">PLC versus PC</h3>
+            </br>
+            <h4>PLC</h4>
+            <li> Designed for extreme industrial environments</li>
+
+            <li> Can operate in high temperature and humidity</li>
+
+            <li> High immunity to noise.</li>
+
+            <li> Integrated Command interpreter (proprietary)</li>
+            <li> Optimized for a Single task</li>
+
+            <h4>PC</h4>
+            <li> Mainly for Data Processing & Calculation </li>
+
+            <li> Optimized for Speed</li>
+
+            <li> Not built for extreme enviroments</li>
+
+            <li>Can be programmed in several languages /li>
+            <li> Built for multitasks</li>
+            </br>
+        </div>
+        <div class="lis">
+            <h3 class="headc" id="par"> Parts of a PLC.</h3>
+            </br>
+            </br>
+
+            <div class="im">
+                <img src="/static/parts.PNG">
+            </div>
+            <p>
+                 Power Supply</br>
+                 Processor Module</br>  CPU</br>  Memory</br>
+                 Communication Interface. </br>
+                 I/O Modules (Analog and Digital)
+
+            </p>
+            </br>
+            </br>
+        </div>
+        <h3 class="headc" id="oper">PLC Operation</h3>
+        </br>
+        <div class="lis">
+            <p>The PLC, as used to control the operation of the AC motor responds to the presence or absence of Logic
+                signals at its I/O module to control response the output devices that receive signal from the output.
+                Examples of discrete inputs: Push Buttons, selector switches, limit switches, proximity switches.
+                Example of discrete outputs devices: Indicator Lights, Relays, Motor Starters.</p>
+            <p>
+                What the CPU does: </br>
+                 Implements the logic and controlling the </br>
+                 communications among the modules. </br>
+                 Stores program information and logical operations results in memory - EPROM or EEPROM plus RAM. </br>
+                 Controls all PLC activity. </br>
+                 Enables user to enter in the desired program in relay ladder logic</br>
+                <div class="im">
+                    <img src="/static/exec.PNG">
+
+                    The PLC program is executed as part of a repetitive process referred to as a scan.</br>
+                    A typical PLC scan starts with the CPU reading the status of inputs.</br>
+                    Next, the application program is executed.</br>
+                    Next, the CPU performs internal diagnostic and communication tasks.</br>
+                    Finally, the status of all outputs is updated.</br>
+                    This process is repeated continuously as long as the PLC is in the run mode.</br>
+
+
+            </p>
+        </div>
+        </br>
+        </br>
+
+        <h3 class="headc" id="lad">Ladder Logic</h3>
+        </br>
+
+        <div class="im">
+            <img src="/static/and.PNG">
+        </div>
+
+        <div class="im">
+            <img src="/static/or.PNG">
+        </div>
+
+        <div class="im">
+            <img src="/static/3rd.PNG">
+        </div>
+
+        <h3 class="headc" id="pro">Programming the PLC</h3>
+        </br>
+
+        <div class="lis">
+            <p>
+
+                The system to be controlled by the PLC is first described in ladder logic.</br>
+                Next the ladder logic is compiled and translated into basic instructions that are uploaded into the PLC
+                memory by the programmer.</br>
+                The programming is done while the PLC is set to TERMINAL OR PROGRAMMING MODE.</br>
+                Programming can be done through a PLC Programmer or a PC that has the programming software.</br>
+            </p>
+       </div>
+       </section>
+       <footer>
+        <div class="a">
+                <a class="nav-link" href="/privacy">privacy policy</a>
+                 <a class="nav-link" href="/static/about.html">AboutUs</a>
+      
+        </div>
+        <div class="a">
+      <a class="copyrighted-badge" title="Copyrighted.com Registered &amp; Protected" target="_blank" href="https://www.copyrighted.com/website/QjqZmRG3Uu18hu8o"><img alt="Copyrighted.com Registered &amp; Protected" border="0" width="125" height="35" srcset="https://static.copyrighted.com/badges/125x25/04_2_2x.png 2x" src="https://static.copyrighted.com/badges/125x25/04_2.png" /></a><script src="https://static.copyrighted.com/badges/helper.js"></script>
+      </div>
+      <div class="a">
+      
+      <a class="nav-link " href="https://www.linkedin.com/in/naksh-automation-61a72b1a9"><i class="fa fa-linkedin b"></i></a>
+      <a class="nav-link " href="https://github.com/akashb12?tab=repositories"><i class="fa fa-github b"></i></a>
+      <a class="nav-link " href="mailto:nakshautomation07@gmail.com"><i class="fa fa-envelope b"></i></a>
+      
+      
+      </div>
+      <div class="a">
+
+<a class="nav-link " href="#top"><i class="fa fa-chevron-up"></i></a>
+
+</div>
+
+      </footer>
+      </body>
+      </html>

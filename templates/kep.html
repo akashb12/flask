@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <style>
+    .navbar {
+      color: blanchedalmond;
+      background-color: black;
+    }
+
+    .navbar ul li a {
+      /* display block to give padding */
+      color: white;
+      display: block;
+      padding: 3px 22px;
+      border-radius: 20px;
+      /* to remove underlines we use text decoration */
+      text-decoration: none;
+
+    }
+
+    .navbar ul li a:hover {
+      color: black;
+      background-color: white;
+
+    }
+
+    .center {
+      text-align: center;
+
+    }
+
+    .qtitle {
+      font-weight: 900;
+    }
+
+    #brief {
+      display: flex;
+      flex-direction: column;
+      padding: 65px 181px;
+      /* height: 2907px; */
+      /* to bring content to center */
+      justify-content: center;
+      align-items: center;
+    }
+
+    #brief::before {
+      content: "";
+      /* to get image at background */
+      background-color: cyan;
+      position: absolute;
+      height: 0%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.59;
+
+    }
+
+    .qimg img {
+      width: 805px;
+    }
+
+    /* .qimg img{
+      height: 200px;
+
+    } */
+ footer {
+  background-color: black;
+  height: 200px;
+  margin-top: 11px;
+}
+.a {  display: flex;
+     justify-content: center;
+     align-items: center;
+
+}
+.b{
+border: 10px white solid;
+background-color: white;
+border-radius: 20px;
+}
+  </style>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" media="screen and (max-width:952px)" / href="/static/phoneplcpro.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+  <title>kepserver</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script data-ad-client="ca-pub-8019090857172030" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="top">
+  <a class="navbar-brand" href="#">NAKSHAUTOMATION</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/logout">Logout</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/pyhmi">PYHMI</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/ask">Q&A</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Overview
+        </a>
+        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+          
+<a class="dropdown-item" href="#">PLC INTERFACING</a>
+<a class="dropdown-item" href="/plcove">1.Plc Overview</a>
+<a class="dropdown-item" href="/plcpro">2.Plc Programming</a>
+<a class="dropdown-item" href="/plcwplsoft">3.Interfacing Plc with wplsoft</a>
+<a class="dropdown-item" href="/kep">4.Interfacing Plc with Intouch scada</a>
+<a class="dropdown-item" href="/sqlscada">5.Interfacing Plc with Sqlserver </a>
+<a class="dropdown-item" href="/pythonplc">6.Interfacing Plc with Python</a>
+<div class="dropdown-divider"></div>
+ <a class="dropdown-item" href="#">FLASK FRAMEWORK</a>
+<a class="dropdown-item" href="/flask">1.FLASK</a>
+<a class="dropdown-item" href="/flaskuser">2.Flask login&Register</a>
+<a class="dropdown-item" href="/flaskvalid">3.Flask validation</a>
+ <div class="dropdown-divider"></div>
+  <a class="dropdown-item" href="#">PYTHON APPLICATIONS</a>
+<a class="dropdown-item" href="/reminder">1.Water Reminder</a>
+ 
+	</div>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
+
+  <section id="brief">
+
+
+
+    <h2 class="qtitle center">Interfacing SCADA with PLC using KEPServerEX</h2>
+
+    <div class="q1">
+      <h4>Preparing KEPServerEX for a FastDDE / SuiteLink Connection </h4>
+
+      <p class="explain ">Wonderware provides connectivity to third-party servers like KEPServerEX through FastDDE and
+        SuiteLink. To create FastDDE and SuiteLink connections to KEPServerEX, follow the instructions below.
+        <br><br>
+      </p>
+
+      <h4>Configuring FastDDE and SuiteLink </h4><br><br>
+      <p>
+        1.In the KEPServerEX user interface, right-click on Project and select Properties.
+        <br><br>
+        2. Select the tab (visible if Wonderware is installed). Important: If the FastDDE/SuiteLink tab is not
+        available, install the Wonderware Common Components on the same machine as KEPServerEX. The SuiteLink
+        connections to the server cannot function without the components.
+        <br><br>
+        3. Verify that Enable FastDDE/SuiteLink connections to the server is checked.
+        <br><br>`
+        4. In Timing, change the client update rate, if desired, or leave it at the default rate (100 ms). This setting
+        may be changed at any time and Click OK.
+      </p>
+    </div>
+
+    <div class="qimg">
+      <img src="/static/kep2.png" alt="">
+
+    </div>
+    <br>
+    <div class="q1">
+      <p class="explain center"> To confirm that any SuiteLink client can access KEPServerEX, run the following command
+        in a MS-DOS window from the PC where Wonderware InTouch will run:
+
+      </p>
+    </div>
+    <div class="qimg">
+      <img src="/static/kep3.PNG" alt="">
+
+    </div>
+    <br>
+
+
+
+
+
+    <!-- <div class="q3"> -->
+
+
+    <!-- </div> -->
+    <div class="q1">
+      <h4>Configuring IP address</h4>
+
+      <p class="explain"> 1.Right click on connectivity
+        <br><br> 2.add new channel <br> <br>
+        3. select type of channel to be created.In our case it is Modbus Tcp/ip and then click next <br> <br>
+        4. add a device. And specify the IP address of the device and click next.
+        <br>
+
+      </p>
+
+    </div>
+    <br>
+    <br>
+    <div class="qimg">
+
+      <img src="/static/kep4.PNG" alt="">
+      <img src="/static/kep5.PNG" alt="">
+
+    </div>
+    <!-- <div class="qimg">
+
+      <img src="/static/kep5.PNG" alt="">
+
+    </div> -->
+    <div class="q1">
+      <h3>Creating Aliases for SuiteLink Topics</h3>
+      <p class="explain">SuiteLink connections consist of three components: an application name, a topic, and an item.
+        When connecting to KEPServerEX via SuiteLink, the application name can be configured in the server in Project
+        properties. For this example we left the default string: "server_runtime". The topic component can be specified
+        by using server's Alias Map feature. The Alias Map has been designed to simplify the use of server data in DDE
+        and SuiteLink client applications.
+        <br>
+        To create an alias, follow the instructions below.<br>
+        1. To start, open KEPServerEX and click Aliases. <br>
+        2. Right-click Aliases and select New Alias.
+        <br>
+        3. Map the string "Alias 1" to "Channel1.Device1", increase the scan rate as per your requirement and click
+        Close
+        <br>
+
+      </p>
+    </div>
+    <div class="qimg">
+
+      <img src="/static/kep6.PNG" alt="">
+    </div>
+
+    <br>
+
+
+
+
+
+    <div class="q1">
+        <h3>Reading PLC Tags </h3>
+        <br>
+  
+        <p class="explain center">
+         Once device is added and Alias is created then user can add modbus addresses inorder to read PLC tags.<br>
+         ONly those PLC tags can be displayed in Intouch SCADA whose modbus addresses are present in Device of KEP server
+  
+        </p>
+      </div>
+      <div class="qimg">
+  
+        <img src="/static/kepmod.PNG" alt="">
+      </div>
+      <br>
+      <div class="q1">
+        <p class="explain">
+            And this is how user needs to add all the modbus addresses that needs to be displayed in Intouch SCADA
+         
+  
+        </p>
+        <div class="qimg">
+  
+            <img src="/static/kepmod1.PNG" alt="">
+          </div>
+      </div>
+      <div class="q1">
+        <p class="explain">
+            Later on user can check if reading of PLC tags is working properly<br>
+            Just go to OPC quick client which is present in KEP server<br>
+            If everything is working properly then it will show quality as good
+         
+  
+        </p>
+        <div class="qimg">
+  
+            <img src="/static/check.PNG" alt="">
+          </div>
+      </div>
+  
+
+
+
+
+
+
+
+
+    <div class="q1">
+      <h3>Creating a Wonderware InTouch Project </h3>
+      <br>
+
+      <p class="explain center">
+        A Wonderware InTouch project acts as the SuiteLink client to KEPServerEX.
+
+      </p>
+    </div>
+    <div class="qimg">
+
+      <img src="/static/kep7.PNG" alt="">
+    </div>
+    <br>
+    <div class="q1">
+      <h4> Creating a Path, Folder, and Name<br> for a New InTouch Project</h4>
+      <br>
+
+      <p class="explain">
+        1. Select Start | Programs | Wonderware | InTouch.<br>
+        2. In the InTouch-Application Manager, select File | New.<br>
+        3. Select Legacy InTouch Application as the application type and click Next. <br>
+        4. Click through the Create New Application wizard, making the following changes: In the first dialog, specify a
+        path for the InTouch project. In the second dialog, specify a folder name. In the final dialog, specify a name
+        for the new project.
+
+
+      </p>
+    </div>
+
+    <div class="qimg">
+      <h4> Adding Access Name Links to<br> the New InTouch Project </h4>
+      <img src="/static/kep8.PNG" alt="">
+    </div>
+    <div class="q1">
+      <p class="explain">Users must add communication links to the server project. InTouch refers to these communication
+        links as "Access Names" and requires that each device in the project has a unique access name.
+        <br>
+        Under tools there is a tab "Access Names" <br><br>
+        Any Access Name must be made by these three components: <br>
+        Node Name: The machine name or IP address of the node running KEPServerEX. If InTouch and KEPServerEX are
+        running on the same machine, this field can be left blank,
+        or “localhost” can be used.<br>
+        Application Name: Name of the application acting as a SuiteLink server, as defined in Project
+        Properties in KEPServerEX configurator. In this example, the default “server_runtime” is used. <br>
+        Topic Name: Name of the Alias in KEPServerEX, as defined in Aliases. <br><br>
+
+        To add access names to the project, follow the instructions
+        below. <br>
+        1. In InTouch-Application Manager, the new project name should appear in the list of applications. Select
+        the project name and choose File | WindowMaker.<br>
+        2. In InTouch-WindowMaker, select Special | Access Names. <br>
+        3. In the Access Names dialog, click Add… . <br>
+        4. In the Add Access Name dialog, make the following changes: <br>
+        • Access Name: Enter a unique name. <br>
+        • Node Name: Leave this field blank. <br>
+        • Application Name: Use the default entry “server_runtime”. <br>
+        • Topic Name: Enter the name of the alias created. <br>
+        • Which protocol to use: Select SuiteLink. <br>
+        • When to advise server: Select Advise only active items. <br>
+
+
+    </div>
+   
+    
+    <div class="qimg">
+        <h4>Adding Tags to the Tagname Dictionary </h4><br>
+      <img src="/static/kep9.PNG" alt="">
+    </div>
+<br>
+
+    <div class="q1">
+      <p class="explain ">
+        1. In WindowMaker, select Special | Tagname Dictionary. <br>
+        2. To add a new tag, click New, then click Type… . <br>
+        3. In Tag Types, check I/O Real and click OK. When defining it as an I/O type tag, the Access Name button will
+        appear.<br>
+        4. In Tagname Dictionary, click Access Name… .<br>
+        5. Select abc as the new tag’s data source, and click Close. <br>
+        6.For Tagname Dictionary, enter "" as the name of the static tag found in the Simulation Driver Demo server
+        project. <br>
+        7. For Tagname, specify a name, such as "BAGCOUNT". <br>
+        8. Click Save to accept the new tag. <br>
+        9. Repeat steps 1-8 to create a second tag. Once finished, click Close.
+
+      </p>
+
+    </div>
+
+
+
+      <h2 class="qtitle center">You can share your difficulties related to PLC,Webdevelopment,Python,Flask framework</h2>
+
+  
+            <form id="upload-form" action="/uploader" method="POST" enctype="multipart/form-data" onsubmit=" return askvalidateform()">
+        <div class="form-group">
+            <label for="name">Enter Name:</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+            <span id="nameerror" class="text-danger"></span>
+          </div>
+         
+          <div class="form-group">
+            <label for="comment">Ask Your Question: </label>
+            <textarea rows="5" cols="30" class="form-control " id="comment" name="comment"
+              placeholder="Ask Question"></textarea>
+            <span id="commenterror" class="text-danger"></span>
+          </div>
+        <input type="file" name="file" accept="image/" multiple>
+        <input type="submit" value="send" class="btn btn-primary">
+        </form>
+
+
+  </section>
+
+<footer>
+  <div class="a">
+          <a class="nav-link" href="/privacy">privacy policy</a>
+           <a class="nav-link" href="/static/about.html">AboutUs</a>
+
+  </div>
+  <div class="a">
+<a class="copyrighted-badge" title="Copyrighted.com Registered &amp; Protected" target="_blank" href="https://www.copyrighted.com/website/QjqZmRG3Uu18hu8o"><img alt="Copyrighted.com Registered &amp; Protected" border="0" width="125" height="35" srcset="https://static.copyrighted.com/badges/125x25/04_2_2x.png 2x" src="https://static.copyrighted.com/badges/125x25/04_2.png" /></a><script src="https://static.copyrighted.com/badges/helper.js"></script>
+</div>
+<div class="a">
+
+<a class="nav-link " href="https://www.linkedin.com/in/naksh-automation-61a72b1a9"><i class="fa fa-linkedin b"></i></a>
+<a class="nav-link " href="https://github.com/akashb12?tab=repositories"><i class="fa fa-github b"></i></a>
+<a class="nav-link " href="mailto:nakshautomation07@gmail.com"><i class="fa fa-envelope b"></i></a>
+
+
+</div>
+<div class="a">
+
+<a class="nav-link " href="#top"><i class="fa fa-chevron-up"></i></a>
+
+</div>
+
+</footer>
+<script type="text/javascript">
+    function askvalidateform() {
+      // for storing regemailid and regpasswordid value in variables
+      var askname = document.getElementById('name').value;
+      var askcomment = document.getElementById('comment').value;
+
+      //    this is for setting email and password check
+      var namecheck = /^[A-Za-z_0-9- !@#$%^&*()/.,:;"']{3,}$/;
+      var commentcheck = /^[A-Za-z_0-9- !@#$%^&*().,:;"'\n]{3,}$/;
+
+      if (namecheck.test(askname)) {
+
+
+        document.getElementById('nameerror').innerHTML = " ";
+        // return true;
+
+      } else {
+        document.getElementById('nameerror').innerHTML = "**Error";
+        alert("error:Please Enter Valid Name");
+        return false;
+
+      }
+      if (commentcheck.test(askcomment)) {
+        document.getElementById('commenterror').innerHTML = "";
+        // return true;
+
+
+
+      } else {
+        document.getElementById('commenterror').innerHTML = "**Error";
+        alert("error:Please Enter Valid Comment")
+        return false;
+      }
+      // to insert into localstorage
+
+    }
+  </script>
+
+</body>
+
+</html>

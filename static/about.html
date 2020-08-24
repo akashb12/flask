@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <style>
+    /* for logo */
+    #brief {
+      display: flex;
+      flex-direction: column;
+      padding: 65px 181px;
+      /* height: 207px; */
+      /* to bring content to center */
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* for entire section ,for background image */
+    #brief::before {
+      content: "";
+      /* to get image at background */
+      background-color: blue;
+      position: absolute;
+      height: 55%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.59;
+
+    }
+
+    /* for text alignment */
+    .center {
+      text-align: center;
+    }
+
+    .heading {
+      border: 2px solid black;
+      border-radius: 18px;
+      background-color: black;
+      color: white;
+    }
+
+    /* logo image */
+
+    #img {
+
+      width: 170px;
+      align-items: center;
+    }
+
+    /* paragraph */
+    .about2 {
+
+      font-size: 1.5rem;
+
+      color: black margin-top: 20px;
+
+    }
+
+    .about1 {
+      font-size: 4rem;
+      font-weight: bold;
+      color: black;
+      text-decoration: underline;
+
+
+    }
+
+    .about {
+
+
+      text-shadow: black;
+      font-size: 4rem;
+      color: white;
+
+
+    }
+    .about3{
+         font-size: 1.3rem;
+    }
+  </style>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <title>AboutUs</title>
+</head>
+
+<body>
+
+  <section id="brief">
+    <div id="b">
+      <img id="img" src="/static/nalogo.png" alt="">
+
+
+    </div>
+    <h1 class="about center">About Us</h1>
+
+
+
+
+  </section>
+  <br>
+  <p class="about1 center">What Drives Us</p>
+
+  <div class="container">
+
+    <p class="about2">At NakshAutomation,we believe everyone deserves to have good knowledge of technology.Innovation
+      and simplicity makes us happy.Our goal is to remove any doubts that people are facing.We're excited to help you on
+      your journey! </p>
+
+    <p class="about2">Naksh Automation provides you best plc tutorials.<br>We mainly focus on interfacing of PLC with different
+      applications</p>
+    <p class="about2">Here we provide tutorials on interfacing of Delta PLC 12SE with KEP SERVER through which we can access
+      PLC tags via Intouch SCADA<br>
+      Tutorials on inserting PLC Real time data to SQL server database and also retrive SQL server data using
+      Intouch SCADA<br>
+      Interfacing Delta PLC with Python and also access sqlserver via python
+    </p>
+    <p class="about2">ContactUs at:<br>
+    <a class="na about3" href="mailto:nakshautomation07@gmail.com">nakshautomation07@gmail.com</a>
+
+    </p>
+     
+    
+
+
+
+    <a href="/">
+      <button class="btn btn-primary my-2 my-sm-0">Go Back</button>
+    </a>
+
+
+  </div>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

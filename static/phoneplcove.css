@@ -1,0 +1,15 @@
+
+    .lis {
+
+        flex-direction: column;
+        padding: 3px 22px;
+    }
+    .im img {
+        height: 13rem;
+        margin-left: 0px;
+        width: 20rem;
+    }
+    #brief::before {
+
+    width: 119%;
+    }

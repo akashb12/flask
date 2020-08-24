@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <style>
+   
+   .navbar {
+      color: blanchedalmond;
+      background-color: black;
+    }
+
+    .navbar ul li a {
+      /* display block to give padding */
+      color: white;
+      display: block;
+      padding: 3px 22px;
+      border-radius: 20px;
+      /* to remove underlines we use text decoration */
+      text-decoration: none;
+
+    }
+
+    .navbar ul li a:hover {
+      color: black;
+      background-color: white;
+
+    }
+    .center{
+      text-align: center;
+
+    }
+    .qtitle{
+      font-weight: 900;
+    }
+
+    #brief {
+      display: flex;
+      flex-direction: column;
+      padding: 65px 181px;
+      /* height: 2907px; */
+      /* to bring content to center */
+      justify-content: center;
+      align-items: center;
+    }
+
+    #brief::before {
+      content: "";
+      /* to get image at background */
+      background-color: cyan;
+      position: absolute;
+      height: 0%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.59;
+
+    }
+    .qimg img {
+    width: 805px;
+}
+    /* .qimg img{
+      height: 200px;
+
+    } */
+footer {
+  background-color: black;
+  height: 200px;
+  margin-top: 11px;
+}
+.a {  display: flex;
+     justify-content: center;
+     align-items: center;
+
+}
+.b{
+border: 10px white solid;
+background-color: white;
+border-radius: 20px;
+}
+
+#brief {
+      display: flex;
+      flex-direction: column;
+      padding: 65px 181px;
+      /* height: 207px; */
+      /* to bring content to center */
+      justify-content: center;
+      align-items: center;
+      margin-bottom: -77px; 
+      }
+    /* for entire section ,for background image */
+    #brief::before{
+    content: "";
+    /* to get image at background */
+  
+    /* background-color: violet;
+    position: absolute;
+    height: 400%; */
+    width: 100%;
+    z-index: -1;
+    opacity: 0.59;
+
+}
+#brief1{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  border: 1px black solid;
+  align-items: center;
+  background-color: red;
+  /* background-color: blue; */
+}
+.brief2{
+  display: flex;
+  
+  padding: 1.5pc;
+  
+}
+.d{
+  text-align: center;
+}
+/* for images border */
+.d img{
+
+  height: 100px;
+  border: 1px black solid;
+  border-radius: 50px;
+  background-color: white;
+  align-items: center;
+}
+/* .border{
+  border: 1px black solid;
+  border-radius: 10px;
+  background-color: yellowgreen;
+  padding left: 10px;
+
+} */
+.toll{
+  font-size: 3rem;
+  font-weight: bolder;
+  border: 1px black solid;
+  background-color: yellow;
+}
+
+/* for text alignment */
+      .center{
+        text-align: center;
+      }
+      .heading{
+        border: 2px solid black;
+        border-radius: 18px;
+        background-color: black;
+        color: white;
+      }
+     
+      
+    
+    /* paragraph */
+    p{
+      font-weight: bold;
+      font-size: larger;
+    }
+    #c img{
+      height: 100px;
+    }
+    .text{
+      font-size: 3rem;
+      font-weight: bolder;
+      border: black 1px solid;
+      background-color: blue;
+    }
+    .text1{
+      font-size: 1.8rem;
+      font-weight: bold;
+      
+
+    }
+  .text2{
+    font-size: 1.3rem;
+    font-weight: bold;
+    
+  }
+
+  </style>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" media="screen and (max-width:900px)" / href="/static/phoneshow.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+
+  <title>Programming</title>
+<script data-ad-client="ca-pub-8019090857172030" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-165252921-1"></script>
+<script>
+	
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-165252921-1');
+</script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">NAKSHAUTOMATION</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/pyhmi">PYHMI</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/ask">Q&A</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Overview
+        </a>
+        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+          
+<a class="dropdown-item" href="#">PLC INTERFACING</a>
+<a class="dropdown-item" href="/plcove">1.Plc Overview</a>
+<a class="dropdown-item" href="/plcpro">2.Plc Programming</a>
+<a class="dropdown-item" href="/plcwplsoft">3.Interfacing Plc with wplsoft</a>
+<a class="dropdown-item" href="/kep">4.Interfacing Plc with Intouch scada</a>
+<a class="dropdown-item" href="/sqlscada">5.Interfacing Plc with Sqlserver </a>
+<a class="dropdown-item" href="/pythonplc">6.Interfacing Plc with Python</a>
+<div class="dropdown-divider"></div>
+ <a class="dropdown-item" href="#">FLASK FRAMEWORK</a>
+<a class="dropdown-item" href="/flask">1.FLASK</a>
+<a class="dropdown-item" href="/flaskuser">2.Flask login&Register</a>
+<a class="dropdown-item" href="/flaskvalid">3.Flask validation</a>
+ <div class="dropdown-divider"></div>
+  <a class="dropdown-item" href="#">PYTHON APPLICATIONS</a>
+<a class="dropdown-item" href="/reminder">1.Water Reminder</a>
+
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
+
+    
+  <section id="brief">
+    <!-- <div id="b">
+      <img id="img" src="/static/nalogo.png" alt="">
+
+    </div> -->
+
+
+  
+    
+
+
+     
+
+    </div>
+<section id="brief1">
+<div>
+  <p class="text">Protective measures against Coronavirus</p>
+  
+</div> 
+    <div id="c">
+      <img src="static/na9.png" alt="">
+
+  </div>
+  <div>
+    <p class="text1">STAY HOME.SAVE LIVES.</p>
+    
+  </div>
+  <div class="container">
+    <!-- <h1 class="center heading mt-3">Covid-19 Symptom Checker</h1> -->
+    <p>Patient's Probability Of Infection Is:&nbsp;{{inf}} </p>
+    <a href="/"> 
+        <button class="btn btn-primary my-2 my-sm-0">Go Back</button>
+  </a>
+</div>
+                                    
+ 
+  <!-- <div>
+    <p class="text2">1 Stay home<br>2 KEEP a safe distance<br>3 WASH hands often<br>4 COVER your cough<br>5 SICK?Call the helpline</5></p>
+    
+  </div>  -->
+</section>
+<!-- <div>
+  <p class="text2">Protect yourself and others around you by knowing the facts and taking appropriate precautions. Follow advice provided by your local public health agency.</p>
+  
+</div>  -->
+
+  
+
+  </section>
+  
+  <section class="brief2">
+    <div class="border1">
+    <div class="d">
+      <img src="static/hands.png" alt="">
+      
+
+  </div>
+  <div>
+    <p class="center text1">Wash your hands with soap and water regularly<br>and maintain proper hygiene</p>
+  </div>
+</div>
+  
+<div class="border1">
+  <div class="d">
+    <img src="static/soap.png" alt="">
+    
+
+</div>
+<div>
+  <p class="center text1">If soap and water is not available,use hand sanitizer with atleast<br>&nbsp;60% alcohol</p>
+</div>
+
+
+</div>
+
+<div class="border1">
+<div class="d">
+  <img src="static/handwash.png" alt="">
+  
+
+</div>
+<div>
+<p class="center text1">Wash hands atleast for 20sec before touching your    <br> eyes,nose, and mouth	&nbsp;</p>
+</div>
+
+
+</div>
+
+
+  </section>
+
+  <section class="brief2">
+    <div class="border1">
+    <div class="d">
+      <img src="static/dustbin.png" alt="">
+      
+
+  </div>
+  <div>
+    <p class="center text1">Throw used tissues into closed bins immediately<br> after use</p>
+  </div>
+</div>
+  
+<div class="border1">
+  <div class="d">
+    <img src="static/mask2.png" alt="">
+    
+
+</div>
+<div>
+  <p class="center text1">Cover your nose and mouth with mask or tissue while sneezing<br>and coughing</p>
+</div>
+
+
+</div>
+
+<div class="border1">
+<div class="d">
+  <img src="static/mass.png" alt="">
+  
+
+</div>
+<div>
+<p class="center text1"> Avoid mass gatherings,crowded places and keep a<br>distance of atleast 1 meter </p>
+</div>
+
+
+</div>
+
+
+  </section>
+  <section >
+    <p class="toll center">1075(Toll Free) | 011-23978046</p>
+  </section>
+
+  
+  
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

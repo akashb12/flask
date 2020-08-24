@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <style>
+        .navbar {
+            color: blanchedalmond;
+            background-color: black;
+        }
+
+        .navbar ul li a {
+            /* display block to give padding */
+            color: white;
+            display: block;
+            padding: 3px 22px;
+            border-radius: 20px;
+            /* to remove underlines we use text decoration */
+            text-decoration: none;
+
+        }
+
+        .navbar ul li a:hover {
+            color: black;
+            background-color: white;
+
+        }
+
+        .center {
+            text-align: center;
+
+        }
+
+        .qtitle {
+            font-weight: 900;
+        }
+
+        #brief {
+            display: flex;
+            flex-direction: column;
+            padding: 65px 181px;
+            /* height: 2907px; */
+            /* to bring content to center */
+            justify-content: center;
+            align-items: center;
+        }
+
+        #brief::before {
+            content: "";
+            /* to get image at background */
+            background-color: cyan;
+            position: absolute;
+            height: 0%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.59;
+
+        }
+
+        .qimg img {
+            width: 805px;
+        }
+        footer {
+  background-color: black;
+  height: 200px;
+  margin-top: 11px;
+}
+.a {  display: flex;
+     justify-content: center;
+     align-items: center;
+
+}
+.b{
+border: 10px white solid;
+background-color: white;
+border-radius: 20px;
+}
+
+        /* .qimg img{
+      height: 200px;
+
+    } */
+    </style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" media="screen and (max-width:952px)" / href="/static/phoneplcpro.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+
+    <title>Communication Between Delta PLc and Pyton</title>
+    
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script data-ad-client="ca-pub-8019090857172030" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="top">
+  <a class="navbar-brand" href="#">NAKSHAUTOMATION</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/logout">Logout</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/pyhmi">PYHMI</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/ask">Q&A</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Overview
+        </a>
+        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+          
+<a class="dropdown-item" href="#">PLC INTERFACING</a>
+<a class="dropdown-item" href="/plcove">1.Plc Overview</a>
+<a class="dropdown-item" href="/plcpro">2.Plc Programming</a>
+<a class="dropdown-item" href="/plcwplsoft">3.Interfacing Plc with wplsoft</a>
+<a class="dropdown-item" href="/kep">4.Interfacing Plc with Intouch scada</a>
+<a class="dropdown-item" href="/sqlscada">5.Interfacing Plc with Sqlserver </a>
+<a class="dropdown-item" href="/pythonplc">6.Interfacing Plc with Python</a>
+<div class="dropdown-divider"></div>
+ <a class="dropdown-item" href="#">FLASK FRAMEWORK</a>
+<a class="dropdown-item" href="/flask">1.FLASK</a>
+<a class="dropdown-item" href="/flaskuser">2.Flask login&Register</a>
+<a class="dropdown-item" href="/flaskvalid">3.Flask validation</a>
+ <div class="dropdown-divider"></div>
+  <a class="dropdown-item" href="#">PYTHON APPLICATIONS</a>
+<a class="dropdown-item" href="/reminder">1.Water Reminder</a>
+
+	</div>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
+
+    <div id="container-c58f51cad3a696cc027086aa4e89856d"></div>
+    <section id="brief">
+
+
+
+        <h2 class="qtitle center">Communication between Delta Plc And Python</h2>
+
+        <div class="q1">
+            <h4>Import Packages </h4>
+
+            <p class="explain ">Python provides package called pymodbus in which there are many modules to
+                communicate with PLC <br>depending on support provided by PLC.
+                <br>
+                To download packages from pycharm<br>
+                i. Open pycharm->File->Settings->Project Interpreter.<br>
+                ii.Click on + sign at the right side or press alt+insert.<br>
+            </p>
+
+            <div class="qimg">
+                <img src="/static/python.PNG" alt="">
+          
+              </div>
+            <p class="explain">
+                iii. Search the package i.e pymodbus and download it
+                <br>
+               Or you can also install packages directly from the command prompt <br>
+                pip install pymodbusTCP/ pip3 install pymodbus<br>
+                This supports both TCP?IP and ASCII communication.<br>
+                Alternative for pymodbus is pymodbusTCP which can be used for only TCP/IP connections
+            </p>
+        
+
+            <h4> Modbus TCP/IP Using pymodbus</h4>
+            <p class="explain">
+            
+                
+                To communicate using modbus TCP/IP, import ModbusTcpClient<br>
+
+                from pymodbus.client.sync import ModbusTcpClient<br>
+
+                client = ModbusTcpClient(host='localhost', port=5020) <br>
+                connection = client.connect()<br>
+                This will complete your python connection with PLC.<br>
+                </p>
+                <div class="qimg">
+                    <img src="/static/python1.PNG" alt="">
+              
+                  </div>
+        </div>
+        <div class="q1">
+
+            <h4>Reading PLC REGISTERS/INPUTS </h4>
+            <p class="explain">
+                For reading plc registers we use<br>
+              
+              reg = client.read_holding_registers(address=0,count= 1, unit=1)<br>
+              regs1=reg.registers[0]<br>
+              1.Enter Modbus adress you want to read for eg:(If you want to read a T0 timer in Delta PLC then put the modbus<br> adress which is 401537 and if this doesn't work the just use 41537 or 01537 since 4 acts<br> as a offset and pymodbus may not support 6 digit modbus address)<br>
+              2.Enter count of registers you want to read.<br>
+              3.Insert the unit ID of PLC which can be found out on a PLC simulators for delta PLC it is WPLSOFTS<br>
+              Using This User can now read the data present in Modbus Address which user Entered.Just click on<br> Read Registers and data will be displayed.<br>
+              Follow similar procedure for reading discrete inputs<br>
+
+                
+              
+
+
+
+            </p>
+            <div class="qimg">
+                <img src="/static/python2.PNG" alt="">
+          
+              </div>
+            <h4>Writing PLC REGISTERS/INPUTS </h4>
+            <p class="explain">
+                client.write_register(address=0,value=0,unit=1)<br>
+                Address and unit will remain same<br>
+                value is the one which you will write to specified PLC tag.
+
+
+
+            </p>
+            <div class="qimg">
+                <img src="/static/python3.PNG" alt="">
+          
+              </div>
+           
+
+        </div>
+
+        <br>
+
+
+
+
+
+
+
+
+     <div class="q1">
+            <h4>Modbus ASCII communication using pymodbus</h4>
+
+            <p class="explain">
+                client = Modbusserialclient(method='rtu', port=502, baudrate=9600, timeout=3, parity=N, stopbits=1,
+                bytesize=8)<br>
+                connection = client.connect()<br>
+                1.Method=rtu or ascii<br><br>
+                2.port=Enter port number of PLC<br><br>
+                In my case it is COM4. You can check it using device manager<br><br>
+                3.baudrate=9600<br><br>
+                4.parity=N<br><br>
+                This will make connection with PLC<br>
+                Reading and writing commands remains same.
+                
+
+
+
+            </p>
+
+       
+       
+            <h4>Online Simulation</h4>
+
+            <p class="explain">Sometimes it is required to simulate code  before connecting to actual PLC.<br>
+                In such cases there are many simulators like<br> modbus server, easymodbus tcp server simulator,ICDT
+                MODBUS TCP server.
+                <br>
+            </p>
+            <p class="explain">
+                If you want to download ICDT MODBUS TCP SERVER click on download button.<br></p>
+            <a href="https://drive.google.com/file/d/1lx8fsW7J6o27Jot37T9Me_R8zGIY9WEd/view?usp=drivesdk"><button
+                    class="btn btn-primary">Download</button></a>
+            
+        </div>
+        <br>
+        <br>
+
+      
+        
+
+
+            <div class="q1">
+                <div class="qimg">
+                    <img src="/static/icdt.PNG" alt="">
+                </div>
+                <h4>How to use ICDT modbus tcp server</h4>
+
+                <p class="explain"> After you have successfuly installed it, mention the port at which you are working
+                    with. then click on this <img src="static/icdt1.PNG" alt=""><br> present at the left side<br> of the menu bar for
+                    connection.<br>
+                    Now you are ready to work with it.<br>
+                    This provides read write operation for both registers as well as discreate coils.
+                    
+                </p> 
+
+              
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+      <h2 class="qtitle center">You can share your difficulties related to PLC,Webdevelopment,Python,Flask framework</h2>
+
+  
+            <form id="upload-form" action="/uploader" method="POST" enctype="multipart/form-data" onsubmit=" return askvalidateform()">
+        <div class="form-group">
+            <label for="name">Enter Name:</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+            <span id="nameerror" class="text-danger"></span>
+          </div>
+         
+          <div class="form-group">
+            <label for="comment">Ask Your Question: </label>
+            <textarea rows="5" cols="30" class="form-control " id="comment" name="comment"
+              placeholder="Ask Question"></textarea>
+            <span id="commenterror" class="text-danger"></span>
+          </div>
+        <input type="file" name="file" accept="image/" multiple>
+        <input type="submit" value="send" class="btn btn-primary">
+        </form>
+
+
+
+
+    </section>
+
+
+    <footer>
+        <div class="a">
+                <a class="nav-link" href="/privacy">privacy policy</a>
+                 <a class="nav-link" href="/static/about.html">AboutUs</a>
+      
+        </div>
+        <div class="a">
+      <a class="copyrighted-badge" title="Copyrighted.com Registered &amp; Protected" target="_blank" href="https://www.copyrighted.com/website/QjqZmRG3Uu18hu8o"><img alt="Copyrighted.com Registered &amp; Protected" border="0" width="125" height="35" srcset="https://static.copyrighted.com/badges/125x25/04_2_2x.png 2x" src="https://static.copyrighted.com/badges/125x25/04_2.png" /></a><script src="https://static.copyrighted.com/badges/helper.js"></script>
+      </div>
+      <div class="a">
+      
+      <a class="nav-link " href="https://www.linkedin.com/in/naksh-automation-61a72b1a9"><i class="fa fa-linkedin b"></i></a>
+      <a class="nav-link " href="https://github.com/akashb12?tab=repositories"><i class="fa fa-github b"></i></a>
+      <a class="nav-link " href="mailto:nakshautomation07@gmail.com"><i class="fa fa-envelope b"></i></a>
+      
+      
+      </div>
+      <div class="a">
+
+<a class="nav-link " href="#top"><i class="fa fa-chevron-up"></i></a>
+
+</div>
+
+      </footer>
+<script type="text/javascript">
+    function askvalidateform() {
+      // for storing regemailid and regpasswordid value in variables
+      var askname = document.getElementById('name').value;
+      var askcomment = document.getElementById('comment').value;
+
+      //    this is for setting email and password check
+      var namecheck = /^[A-Za-z_0-9- !@#$%^&*()/.,:;"']{3,}$/;
+      var commentcheck = /^[A-Za-z_0-9- !@#$%^&*().,:;"'\n]{3,}$/;
+
+      if (namecheck.test(askname)) {
+
+
+        document.getElementById('nameerror').innerHTML = " ";
+        // return true;
+
+      } else {
+        document.getElementById('nameerror').innerHTML = "**Error";
+        alert("error:Please Enter Valid Name");
+        return false;
+
+      }
+      if (commentcheck.test(askcomment)) {
+        document.getElementById('commenterror').innerHTML = "";
+        // return true;
+
+
+
+      } else {
+        document.getElementById('commenterror').innerHTML = "**Error";
+        alert("error:Please Enter Valid Comment")
+        return false;
+      }
+      // to insert into localstorage
+
+    }
+  </script>
+
+
+</body>
+
+</html>

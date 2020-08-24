@@ -1,0 +1,60 @@
+/* navbar */
+#a{
+    flex-direction: column;
+    width: auto;
+    height: auto;
+}
+#a::before{
+   
+    height: 100%;
+    width: 124%;
+   
+}
+#a ul li a{
+    font-size: 0.8rem;
+    /* padding: 0px 9px; */
+}
+
+
+
+/* brief */
+#briefa{
+
+    /* padding: 65px 181px; */
+    height: 650px;
+    /* width: 30px;
+     justify-content: center;
+    align-items: center;  */
+}
+#briefa::before{
+ 
+    height: 240%;
+    width: 125%; 
+
+
+}
+#briefa .logo img{
+    height: 0px;
+    margin: -10px 32px;
+   
+}
+#briefa .h{
+
+    font-size: 2rem;
+   
+    
+    
+}
+#briefa .bor{
+    font-size: 1.0rem;
+    /* width: 300px;
+    
+    
+    border: 2px solid black; */
+}
+#briefa .list ul li{
+    font-size: 1rem;
+    /* margin: 9px 10px;*/
+    width: auto; 
+
+}

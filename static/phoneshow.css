@@ -1,0 +1,29 @@
+.text{
+    font-size: 1rem;
+}
+.text1{
+    font-size: 1rem;
+
+}
+.textab{
+    font-size: 0.8rem;
+}
+#brief1{
+    width: 300px;
+}
+#brief::before {
+        width: 136%;
+}
+.qimg img{
+    width: 350px;
+
+}
+.explain{
+    width: 350px;
+}
+
+.qtitle {
+    font-size: 1.4rem;
+    width: 350px;
+    }
+

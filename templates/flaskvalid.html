@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <style>
+    .navbar {
+      color: blanchedalmond;
+      background-color: black;
+    }
+
+    .navbar ul li a {
+      /* display block to give padding */
+      color: white;
+      display: block;
+      padding: 3px 22px;
+      border-radius: 20px;
+      /* to remove underlines we use text decoration */
+      text-decoration: none;
+
+    }
+
+    .navbar ul li a:hover {
+      color: black;
+      background-color: white;
+
+    }
+
+    .center {
+      text-align: center;
+
+    }
+
+    .qtitle {
+      font-weight: 900;
+    }
+
+    #brief {
+      display: flex;
+      flex-direction: column;
+      padding: 65px 181px;
+      /* height: 2907px; */
+      /* to bring content to center */
+      justify-content: center;
+      align-items: center;
+    }
+
+    #brief::before {
+      content: "";
+      /* to get image at background */
+      background-color: cyan;
+      position: absolute;
+      height: 0%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.59;
+
+    }
+
+    .qimg img {
+      width: 805px;
+    }
+ 
+
+    /* .qimg img{
+      height: 200px;
+
+    } */
+ footer {
+  background-color: black;
+  height: 200px;
+  margin-top: 11px;
+}
+.a {  display: flex;
+     justify-content: center;
+     align-items: center;
+
+}
+.b{
+border: 10px white solid;
+background-color: white;
+border-radius: 20px;
+}
+
+  </style>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" media="screen and (max-width:952px)" / href="/static/phoneflask.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+  <title>flaskvalidation</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script data-ad-client="ca-pub-8019090857172030" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="top">
+  <a class="navbar-brand" href="#">NAKSHAUTOMATION</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/logout">Logout</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/pyhmi">PYHMI</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/ask">Q&A</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Overview
+        </a>
+        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">PLC INTERFACING</a>
+            <a class="dropdown-item" href="/plcove">1.Plc Overview</a>
+            <a class="dropdown-item" href="/plcpro">2.Plc Programming</a>
+            <a class="dropdown-item" href="/plcwplsoft">3.Interfacing Plc with wplsoft</a>
+            <a class="dropdown-item" href="/kep">4.Interfacing Plc with Intouch scada</a>
+            <a class="dropdown-item" href="/sqlscada">5.Interfacing Plc with Sqlserver </a>
+            <a class="dropdown-item" href="/pythonplc">6.Interfacing Plc with Python</a>
+            <div class="dropdown-divider"></div>
+             <a class="dropdown-item" href="#">FLASK FRAMEWORK</a>
+            <a class="dropdown-item" href="/flask">1.FLASK</a>
+            <a class="dropdown-item" href="/flaskuser">2.Flask login&Register</a>
+            <a class="dropdown-item" href="/flaskvalid">3.Flask validation</a>
+             <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">PYTHON APPLICATIONS</a>
+            <a class="dropdown-item" href="/reminder">1.Water Reminder</a>
+          </div>
+        </li>
+
+      </ul>
+
+
+  </div>
+</nav>
+
+  <section id="brief">
+
+    <h2 class="qtitle center">Validation For Forms</h2>
+
+    <div class="q1">
+    
+
+      <p class="explain ">Previously we created a flask login and register.In this tutorial
+        we will study about form validation.Form validation is required to allow users to provide
+         valid information.<br>
+         This is how the form will look like and if wrong info is provided by user then
+         it will give an alert saying username is invalid or password is invalid
+      </p>
+    </div>
+      <div class="q1">
+        <form id="regform"onsubmit=" return regvalidateform()">
+            Enter Email:<input type="text" id="regemailid" class="form-control" name="uname" placeholder="Email Adress">
+            <span id="regusererror" class="text-danger"></span>
+            <br>
+            Enter Password:<input type="password" id="regpasswordid" class="form-control" name="passw" placeholder="Password">
+            <span id="regpassworderror" class="text-danger"></span>
+            <br>
+            <button id="reg" class="btn btn-primary" type="submit">submit</button>
+        </form>
+    
+  
+      </div>
+      <div class="q1">
+    
+
+        <p class="explain ">To achieve such validation we use javascript code
+        </p>
+
+      </div>
+      <xmp id="p1" class="explain1">
+        <script type="text/javascript">
+            function regvalidateform(){
+                // for storing regemailid and regpasswordid value in variables
+                var regemail=document.getElementById('regemailid').value;
+                var regpassword=document.getElementById('regpasswordid').value;
+            //    this is for setting email and password check
+                var emailcheck = /^[A-Za-z_0-9]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z]{2,6}$/;
+                var passwordcheck = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z_0-9!@#$%^&*]{8,16}$/;
+                if (emailcheck.test(regemail)) { 
+                    document.getElementById('regusererror').innerHTML = "correct username";
+                }else {
+                    document.getElementById('regusererror').innerHTML = "**username is invalid";
+                    alert("error:username is not valid");
+                    return false;
+                }
+                if (passwordcheck.test(regpassword)) {
+                    document.getElementById('regpassworderror').innerHTML = "correct password";
+                }else {
+                    document.getElementById('regpassworderror').innerHTML = "**password is invalid";
+                    alert("error:password is not valid.")
+                    return false;
+                }
+            }
+        </script>
+        </xmp>
+      <button class="btn btn-secondary but" onclick="copyToClipboard('#p1')">Copy</button>
+      <br><br>
+
+      <p class="explain ">Html form code
+    </p>
+    <br>
+
+      <xmp id="p2" class="explain1">
+      <form id="regform"method="POST" onsubmit=" return regvalidateform()">
+        Enter Email:<input type="text" id="regemailid" class="form-control"
+         name="uname" placeholder="Email Adress">
+        <span id="regusererror" class="text-danger"></span>
+        <br>
+        Enter Password:<input type="password" id="regpasswordid" class="form-control"
+         name="passw" placeholder="Password">
+        <span id="regpassworderror" class="text-danger"></span>
+        <br>
+        <button id="reg" class="btn btn-primary" type="submit">submit</button>
+    </form>
+</xmp>
+<button class="btn btn-secondary but" onclick="copyToClipboard('#p2')">Copy</button><br><br>
+<div class="q1">
+      
+      <p class="explain">When you click on submit button form will call javascript function regvalidateform() which will perform the validation on form.
+        since on form submit we are returning regvalidateform()
+     </p>
+     <p class="codefont"> onsubmit=" return regvalidateform()"</p>
+     <h6 class="explain center">How regvalidate function works</h6>
+     <p class="explain">1. In regvalidate form we are using 2 variables regemail and regpassword,
+                        this variables are storing user inputs from register form using their id's<br>
+     </p>
+
+    <p class="codefont explain">  var regemail=document.getElementById('regemailid').value;</p>
+    <p class="codefont explain">  var regpassword=document.getElementById('regpasswordid').value;</p>
+    
+    <p class="explain">3. Now 2 more variables are used for providing validation that are 
+        emailcheck and passwordcheck.
+</p>
+</div>
+ 
+<p class="codefont explain">var emailcheck = /^[A-Za-z_0-9]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z]{2,6}$/;</p>
+<p class="codefont explain">var passwordcheck = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z_0-9!@#$%^&*]{8,16}$/;</p>
+    
+<p class="explain">4. validation starts with /^ and ends with $/;<br>
+    5.In square brackets you need to provide what you want to include in email address
+    for ex:-1. example01@gmail.com,2.example01@gmail.co.in<br>
+    6.[A-Za-z_0-9]{3,} so we can have letters from A-Z,letters from a-z , numbers from 0-9 and 
+    in curly brackets we need to specify length{min,max} in our case minimum is 3.<br>
+    7.then you need @ which is compulsory so length is not provided.<br>
+    8.After @ we need words like gmail,yahoo so in square brackets allow[A-Za-z]{3,}<br>
+    9.Now . should be compulsory so you can either place it directly like @ or place it in 
+    square bracket with length as 1 [.]{1}.<br>
+    10. At last after . we need to provide com,co,in so allow letters in curly brackets[A-Za-z]{2,6}<br>
+    11.Some have .co.in so for that you can allow . by using [.]{1} or place .
+    directly and allow letters in square brackets.<br><br>
+    12. For passwords we again start with /^ and end with $/;.<br>
+    13. (?=.*[0-9])<br>
+    ?=.* indicates that your password must include atleast 1 number from 0-9<br>
+    14. (?=.*[!@#$%^&*])<br>
+    Similarly for making special characters compulsory in password <br>
+    15.[a-zA-Z_0-9!@#$%^&*]{8,16}<br>
+    So in our case password must have one number and one special character and remaining characters 
+    can be anything from square bracket and minimum length for password is set as 8 and max 
+    as 16.
+    </p><br>
+    <p class="codefont center">
+        if (emailcheck.test(regemail)) { <br>
+            document.getElementById('regusererror').innerHTML = "correct username";<br>
+        }else {<br>
+            document.getElementById('regusererror').innerHTML = "**username is invalid";<br>
+            alert("error:username is not valid");<br>
+            return false;<br>
+        }
+    </p>
+    <p class="explain">16. So in if condition we are checking if emailcheck variable which has validation stored in it and the regemail which has user email.<br>
+        17. If email entered by user is satisfying all the validation conditions then it will get element of span with id regusererror and display "correct username " inplace of span.<br>
+        18. If it does not match then again it will get same span element and replace it with username not valid and also it will show alert as username is invalid.<br>
+        19. similarly password validation is done<br><br>
+        So like this you can provide any type of validation for your input forms 
+
+
+        </p><br>
+    
+      <h2 class="qtitle center">You can share your difficulties related to PLC,Webdevelopment,Python,Flask framework</h2>
+
+            <form id="upload-form" action="/uploader" method="POST" enctype="multipart/form-data" onsubmit=" return askvalidateform()">
+        <div class="form-group">
+            <label for="name">Enter Name:</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+            <span id="nameerror" class="text-danger"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="comment">Ask Your Question: </label>
+            <textarea rows="5" cols="30" class="form-control " id="comment" name="comment"
+              placeholder="Ask Question"></textarea>
+            <span id="commenterror" class="text-danger"></span>
+          </div>
+        <input type="file" name="file" accept="image/" multiple>
+        <input type="submit" value="send" class="btn btn-primary">
+        </form>
+
+
+  </section>
+
+<footer>
+  <div class="a">
+          <a class="nav-link" href="/privacy">privacy policy</a>
+           <a class="nav-link" href="/static/about.html">AboutUs</a>
+
+  </div>
+  <div class="a">
+<a class="copyrighted-badge" title="Copyrighted.com Registered &amp; Protected" target="_blank" href="https://www.copyrighted.com/website/QjqZmRG3Uu18hu8o"><img alt="Copyrighted.com Registered &amp; Protected" border="0" width="125" height="35" srcset="https://static.copyrighted.com/badges/125x25/04_2_2x.png 2x" src="https://static.copyrighted.com/badges/125x25/04_2.png" /></a><script src="https://static.copyrighted.com/badges/helper.js"></script>
+</div>
+<div class="a">
+
+<a class="nav-link " href="https://www.linkedin.com/in/naksh-automation-61a72b1a9"><i class="fa fa-linkedin b"></i></a>
+<a class="nav-link " href="https://github.com/akashb12?tab=repositories"><i class="fa fa-github b"></i></a>
+<a class="nav-link " href="mailto:nakshautomation07@gmail.com"><i class="fa fa-envelope b"></i></a>
+
+
+</div>
+</footer>
+<script type="text/javascript">
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+</script>
+<script type="text/javascript">
+    function regvalidateform(){
+        // for storing regemailid and regpasswordid value in variables
+        var regemail=document.getElementById('regemailid').value;
+        var regpassword=document.getElementById('regpasswordid').value;
+
+    //    this is for setting email and password check
+        var emailcheck = /^[A-Za-z_0-9]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z]{2,6}$/;
+        var passwordcheck = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z_0-9!@#$%^&*]{8,16}$/;
+        if (emailcheck.test(regemail)) {
+            
+
+            document.getElementById('regusererror').innerHTML = "correct username";
+            // return true;
+            
+        }else {
+            document.getElementById('regusererror').innerHTML = "**username is invalid";
+            alert("error:username is not valid");
+            return false;
+
+        }
+        if (passwordcheck.test(regpassword)) {
+            document.getElementById('regpassworderror').innerHTML = "correct password";
+            // return true;
+            
+
+
+        }else {
+            document.getElementById('regpassworderror').innerHTML = "**password is invalid";
+            alert("error:password is not valid.Password must have one number and one special character and 8 characters long")
+            return false;
+        }
+        // to insert into localstorage
+        localStorage.setItem('regemail',regemailid.value);
+        localStorage.setItem('regpassword',regpasswordid.value);
+    }
+</script>
+<script type="text/javascript">
+    function askvalidateform() {
+      // for storing regemailid and regpasswordid value in variables
+      var askname = document.getElementById('name').value;
+      var askcomment = document.getElementById('comment').value;
+
+      //    this is for setting email and password check
+      var namecheck = /^[A-Za-z_0-9- !@#$%^&*()/.,:;"']{3,}$/;
+      var commentcheck = /^[A-Za-z_0-9- !@#$%^&*().,:;"'\n]{3,}$/;
+
+      if (namecheck.test(askname)) {
+
+
+        document.getElementById('nameerror').innerHTML = " ";
+        // return true;
+
+      } else {
+        document.getElementById('nameerror').innerHTML = "**Error";
+        alert("error:Please Enter Valid Name");
+        return false;
+
+      }
+      if (commentcheck.test(askcomment)) {
+        document.getElementById('commenterror').innerHTML = "";
+        // return true;
+
+
+
+      } else {
+        document.getElementById('commenterror').innerHTML = "**Error";
+        alert("error:Please Enter Valid Comment")
+        return false;
+      }
+      // to insert into localstorage
+
+    }
+  </script>
+
+</body>
+</html>

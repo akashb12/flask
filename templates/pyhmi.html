@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <style>
+   
+   .navbar {
+      color: blanchedalmond;
+      background-color: black;
+    }
+
+    .navbar ul li a {
+      /* display block to give padding */
+      color: white;
+      display: block;
+      padding: 3px 22px;
+      border-radius: 20px;
+      /* to remove underlines we use text decoration */
+      text-decoration: none;
+
+    }
+
+    .navbar ul li a:hover {
+      color: black;
+      background-color: white;
+
+    }
+    .center{
+      text-align: center;
+
+    }
+    .qtitle{
+      font-weight: 900;
+    }
+
+    #brief {
+      display: flex;
+      flex-direction: column;
+      padding: 65px 181px;
+      /* height: 2907px; */
+      /* to bring content to center */
+      justify-content: center;
+      align-items: center;
+    }
+
+    #brief::before {
+      content: "";
+      /* to get image at background */
+      background-color: cyan;
+      position: absolute;
+      height: 0%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.59;
+
+    }
+    .qimg img {
+    width: 805px;
+}
+    /* .qimg img{
+      height: 200px;
+
+    } */
+ footer {
+  background-color: black;
+  height: 200px;
+  margin-top: 11px;
+}
+.a {  display: flex;
+     justify-content: center;
+     align-items: center;
+
+}
+.b{
+border: 10px white solid;
+background-color: white;
+border-radius: 20px;
+}
+  </style>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" media="screen and (max-width:952px)" / href="/static/phoneplcpro.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+  <title>pyhmi</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-165252921-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-165252921-1');
+</script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script data-ad-client="ca-pub-8019090857172030" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light" id="top">
+  <a class="navbar-brand" href="#">NAKSHAUTOMATION</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/logout">Logout</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/pyhmi">PYHMI</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/ask">Q&A</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Overview
+        </a>
+        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+          
+<a class="dropdown-item" href="#">PLC INTERFACING</a>
+<a class="dropdown-item" href="/plcove">1.Plc Overview</a>
+<a class="dropdown-item" href="/plcpro">2.Plc Programming</a>
+<a class="dropdown-item" href="/plcwplsoft">3.Interfacing Plc with wplsoft</a>
+<a class="dropdown-item" href="/kep">4.Interfacing Plc with Intouch scada</a>
+<a class="dropdown-item" href="/sqlscada">5.Interfacing Plc with Sqlserver </a>
+<a class="dropdown-item" href="/pythonplc">6.Interfacing Plc with Python</a>
+<div class="dropdown-divider"></div>
+ <a class="dropdown-item" href="#">FLASK FRAMEWORK</a>
+<a class="dropdown-item" href="/flask">1.FLASK</a>
+<a class="dropdown-item" href="/flaskuser">2.Flask login&Register</a>
+<a class="dropdown-item" href="/flaskvalid">3.Flask validation</a>
+ <div class="dropdown-divider"></div>
+  <a class="dropdown-item" href="#">PYTHON APPLICATIONS</a>
+<a class="dropdown-item" href="/reminder">1.Water Reminder</a>
+
+	</div>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
+
+  
+  <section id="brief">
+
+
+    
+      <h2 class="qtitle center">PYHMI BY NAKSH AUTOMATION</h2>
+    
+    <div class="q1">
+       
+    <p class="explain ">1.Pyhmi is written in python code,It is especially build for PLC's(Programmable Logic Controller) which has modbus TCP/IP or modbus ASCII support.
+          <br><br>
+
+    
+    2.It is free of cost and compact Application 
+    <br><br>
+         3.It can read PLC registers also Reset registers,at one time can read 2 registers and display their results.
+         <br><br>
+         4.It can Read Discrete Inputs and has functionality of providing different colours eg.(If input is high then green colour and if input is low then red colour) and can read 4 discrete inputs in one time
+         <br><br>
+         5.It has built in support for SQL Server Database and has graph plotting function which can take any 2 inputs from database
+      </p>
+    </div>
+      
+      <div class="qimg">
+        <img src="/static/pyhmi.PNG" alt="">
+
+      </div>
+      <br>
+      <div class="q1">
+      <p class="explain center"> Two buttons for reading registers and 2 buttons for reading discrete inputs
+      </p>
+    </div>
+
+
+
+
+
+    <!-- <div class="q3"> -->
+
+      <h2 class="qtitle center"> Connect Your PLC with Pyhmi</h2>
+    <!-- </div> -->
+      <div class="qimg">
+        <img src="/static/pyhmi1.PNG" alt="">
+
+      </div>
+      <div class="q1">
+      <p class="explain center">So as you can see there are two types of communications which can be used to connect PLC with pyhmi
+        <br>
+        1.Modbus TCP/IP<br>
+        2.Modbus ASCII
+       
+      </p>
+
+    </div>
+      <div class="qimg">
+        <h2 class="qtitle center">Modbus TCP/IP</h2>
+        <img src="/static/tcpip.PNG" alt="">
+
+      </div>
+    <div class="q1">
+      <p class="explain center">So here user needs to provide 
+          <br>
+          1. IPaddress of PLC<br>
+          2.Port number of PLC <br>
+          Then click on connect button and your connection will be established between pyhmi and your PLC
+      </p>
+    </div>
+
+      
+      
+    <div class="q1">
+      <p class="explain center">
+
+      </p>
+    </div>
+      <div class="qimg">
+        <h2 class="qtitle center">Modbus ASCII</h2>
+        <img src="/static/ascii.PNG" alt="">
+      </div>
+      <div class="q1">
+      <p class="explain">1.Method=rtu<br><br>
+          2.port=Enter port number of PLC<br><br>
+	  In my case it is COM4. You can check it using device manager<br><br>
+          3.baudrate=9600<br><br>
+          4.parity=N<br><br>
+          Enter this and click on connect button
+      </p>
+    </div>
+    
+    <div class="qimg">
+        <h2 class="qtitle center">Reading Registers And Reset</h2>
+        <img src="/static/read.PNG" alt="">
+      </div>
+      <div class="q1">
+      <p class="explain">After successful connection we can now read PLC registers<br>
+      1.Enter Modbus adress you want to read for eg:(If you want to read a T0 timer in Delta PLC then put<br> the modbus address which is 401537 and if this doesn't work the just use 41537 or 01537 since 4 acts<br> as a offset and pymodbus may not support 6 digit modbus address)<br><br>
+        2.Insert the unit ID of PLC which can be found out on a PLC simulators for delta PLC it is WPLSOFTS<br><br>
+	Using This User can now read the data present in Modbus Address which user Entered.<br>Just click on Read Registers and data will be displayed</p>
+          
+      </div>
+      <h2 class="qtitle center">DATABASE CONNECTION</h2>
+      <div class="qimg">
+        <img src="/static/driver.PNG" alt="">
+      </div>
+
+      <div class="q1">
+        <p class="explain ">
+            1. Driver = ODBC Driver 11 for SQL Server<br>
+            It may not be same for everyone so to check drivers you can run this command in python<br>
+            for driver in pyodbc.drivers():
+            print(driver)<br><br>
+	    And before this user needs to create a connection string in ODBC server.<br>While establishing connection string you need to specify Server name And the database name<br>
+            Another method to check the driver is open ODBC and go in connection pooling</p>
+            <div class="qimg">
+                <img src="/static/odbc.PNG" alt="">
+              </div>
+      </div> 
+      <div class="q1">
+        <p class="explain ">
+            2. Server = LAPTOP-CNL636HF\SQLEXPRESS<br>
+            User can check their server name by entering into SQL server database
+          </p>
+            <div class="qimg">
+                <img src="/static/servername.PNG" alt="">
+              </div>
+      </div>
+    </div> <div class="q1">
+        <p class="explain ">
+            3. Database Name = Enter the name of the database which you created<br>
+           
+          </p>
+	  <!-- </div> <div class="q1">-->
+            <p class="explain ">
+                4. Tabel Name =  Enter the name of the table which you created<br>
+                
+              </p>
+                
+	<!--  </div>
+	  <div class="q1">-->
+            <p class="explain ">
+                5. Coulmn Name=Enter column names in which user wants to enter data.<br>
+                Initially user can store datetime in one column and register value in another column.<br>
+                So  create 1st column of type datetime and 2nd column of type int.<br>
+                If user wants to store anything else iplace of datetime and int can contact us at nakshautomation07@gmail.com
+
+                
+              </p>
+                <div class="qimg">
+                    <img src="/static/tablecont.PNG" alt="">
+                  </div>
+          </div>
+          <div class="q1">
+            <p class="explain ">
+                6. Trusted Connection =  yes<br>
+                
+              </p>
+            </div>
+            <div class="q1">
+                <p class="explain ">
+                    Once user Enters all this details then user can click on READ REGSTER inorder to insert data to SQL server<br>
+                    
+                  </p>
+                  <h2 class="qtitle center">Plotting Graph</h2>
+                  <div class="qimg">
+                    <img src="/static/graphs.PNG" alt="">
+                  </div>
+            
+                  <div class="q1">
+                    <p class="explain ">
+                        Now after inserting data into the database user can retrieve the data and show it on a graph<br><br>
+                        1.Enter query=select datetime,count  from pytb2<br><br>
+                        Here datetime and count are column names of database and table name is pytb2.<br><br>
+                        2.X-Label=Enter name you want to display as X-Label<br><br>
+                        3.Y-Label=Enter name you want to display as Y-Label<br><br>
+                        Now User can click on generate graph to view the graph.
+
+
+                        </p>
+                      
+                  </div> 
+                  <h2 class="qtitle center">Reading Discrete Inputs</h2>
+                  <div class="qimg">
+                    <img src="/static/discrete.PNG" alt="">
+                  </div>
+            
+                  <div class="q1">
+                    <p class="explain ">
+                        Reading Discrete inputs is very simple<br><br>
+                        Just Enter Modbus Address of discrete input you want to read and enter unit number of PLC and you are all ready to read it.<br><br>
+                        If input is high then it will turn green<br><br>
+                        If input is low then it will turn Red
+
+
+                        </p>
+                        <div class="qimg">
+                            <img src="/static/test.PNG" alt="">
+                          </div>
+                        
+                          
+                      
+                  </div> 
+                  <br>
+                  <div class="q1">
+                    <p class="explain ">
+                     Click on button to download PYHMI by Naksh Automation
+                        </p>
+                        <p class="explain ">
+			<a href=" https://drive.google.com/file/d/1MzNZ2-0oZPI9SeHlHXXEho4_36FnVcpg/view?usp=drivesdk"><button class="btn btn-primary">Download</button></a>
+                           
+                               </p>
+     
+                  </div> 
+      <h2 class="qtitle center">You can share your difficulties related to PLC,Webdevelopment,Python,Flask framework</h2>
+
+  
+            <form id="upload-form" action="/uploader" method="POST" enctype="multipart/form-data" onsubmit=" return askvalidateform()">
+        <div class="form-group">
+            <label for="name">Enter Name:</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+            <span id="nameerror" class="text-danger"></span>
+          </div>
+         
+          <div class="form-group">
+            <label for="comment">Ask Your Question: </label>
+            <textarea rows="5" cols="30" class="form-control " id="comment" name="comment"
+              placeholder="Ask Question"></textarea>
+            <span id="commenterror" class="text-danger"></span>
+          </div>
+        <input type="file" name="file" accept="image/" multiple>
+        <input type="submit" value="send" class="btn btn-primary">
+        </form>
+  </section> 
+        
+
+
+<footer>
+  <div class="a">
+          <a class="nav-link" href="/privacy">privacy policy</a>
+           <a class="nav-link" href="/static/about.html">AboutUs</a>
+
+  </div>
+  <div class="a">
+<a class="copyrighted-badge" title="Copyrighted.com Registered &amp; Protected" target="_blank" href="https://www.copyrighted.com/website/QjqZmRG3Uu18hu8o"><img alt="Copyrighted.com Registered &amp; Protected" border="0" width="125" height="35" srcset="https://static.copyrighted.com/badges/125x25/04_2_2x.png 2x" src="https://static.copyrighted.com/badges/125x25/04_2.png" /></a><script src="https://static.copyrighted.com/badges/helper.js"></script>
+</div>
+<div class="a">
+
+<a class="nav-link " href="https://www.linkedin.com/feed/"><i class="fa fa-linkedin b"></i></a>
+<a class="nav-link " href="https://github.com/akashb12?tab=repositories"><i class="fa fa-github b"></i></a>
+<a class="nav-link " href="mailto:nakshautomation07@gmail.com"><i class="fa fa-envelope b"></i></a>
+
+
+</div>
+<div class="a">
+
+<a class="nav-link " href="#top"><i class="fa fa-chevron-up"></i></a>
+
+</div>
+
+</footer>
+<script type="text/javascript">
+    function askvalidateform() {
+      // for storing regemailid and regpasswordid value in variables
+      var askname = document.getElementById('name').value;
+      var askcomment = document.getElementById('comment').value;
+
+      //    this is for setting email and password check
+      var namecheck = /^[A-Za-z_0-9- !@#$%^&*()/.,:;"']{3,}$/;
+      var commentcheck = /^[A-Za-z_0-9- !@#$%^&*().,:;"'\n]{3,}$/;
+
+      if (namecheck.test(askname)) {
+
+
+        document.getElementById('nameerror').innerHTML = " ";
+        // return true;
+
+      } else {
+        document.getElementById('nameerror').innerHTML = "**Error";
+        alert("error:Please Enter Valid Name");
+        return false;
+
+      }
+      if (commentcheck.test(askcomment)) {
+        document.getElementById('commenterror').innerHTML = "";
+        // return true;
+
+
+
+      } else {
+        document.getElementById('commenterror').innerHTML = "**Error";
+        alert("error:Please Enter Valid Comment")
+        return false;
+      }
+      // to insert into localstorage
+
+    }
+  </script>
+
+</body>
+
+</html>

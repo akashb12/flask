@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- link is used to add css to html.we can also use<style></style> -->
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        /* navigationbar */
+        #a {
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            width: 100%;
+
+        }
+
+        #a::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        #b {
+            height: 56px;
+            margin: 5px -20px;
+        }
+
+        #b img {
+            height: 70px;
+            margin: -10px 32px;
+
+
+        }
+
+        #a ul {
+
+            /*display flex to bring content in one line */
+            display: flex;
+
+        }
+
+        #a ul li {
+            color: white;
+            /* to remove dots we use list style */
+            list-style: none;
+            font-size: 1.3rem;
+
+        }
+
+        #a ul li a {
+            /* display block to give padding */
+            color: white;
+            display: block;
+            padding: 3px 22px;
+            border-radius: 20px;
+            /* to remove underlines we use text decoration */
+            text-decoration: none;
+
+        }
+
+        #a ul li a:hover {
+            color: black;
+            background-color: white;
+        }
+
+        /* home section */
+        #brief {
+            display: flex;
+            flex-direction: column;
+            padding: 65px 181px;
+            height: 207px;
+            /* to bring content to center */
+            justify-content: center;
+            align-items: center;
+        }
+
+        #brief::before {
+            content: "";
+            /* to get image at background */
+            background: url(../static/na7.jpg)no-repeat center center/cover;
+            position: absolute;
+            height: 109%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.59;
+
+        }
+
+        #brief .logo img {
+            height: 190px;
+            margin: -10px 32px;
+
+
+
+        }
+
+        #brief .h {
+            font-size: 5rem;
+            font-style: oblique;
+            font-family: 'Times New Roman', Times, serif;
+            color: black;
+            /* background-color: rgb(4, 3, 102); */
+        }
+
+        #brief .bor {
+            font-size: 1.9rem;
+            border: 2px solid black;
+            padding: 2px 2px;
+            color: white;
+            background-color: rgb(4, 3, 102);
+        }
+
+        #brief .bor1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+
+        }
+
+
+
+
+
+
+        /* loginsection */
+        .login-container {
+            height: 100vh;
+            width: 100%;
+        }
+
+        .login-form {
+            max-width: 100%;
+            width: 370px;
+            padding: 15px;
+            margin: auto;
+
+        }
+
+        .format-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .btn {
+            width: auto;
+
+        }
+
+        .loginn {
+            border: 2px solid black;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            align-items: center;
+            font-size: 1.8rem;
+
+        }
+
+        .error {
+            color: red;
+            height: 200px;
+        }
+
+
+
+
+
+        /* utility */
+        .center {
+            text-align: center;
+        }
+
+
+
+        /* plc overview */
+    </style>
+
+
+
+    <!-- phone.css is for responsive website -->
+    <link rel="stylesheet" media="screen and (max-width:1080px)" / href="naksh/phonelogin.css">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <!-- id is unique for each application and alt is to show error  -->
+    <nav id="a">
+        <div id="b">
+            <img src="/static/nalogo.png" alt="">
+
+        </div>
+        <!-- ul is unordered list -->
+        <ul>
+            <!-- a is anchor tag on which different functions can be used -->
+            <li class="itema"><a href="/">Home</a></li>
+
+
+
+        </ul>
+    </nav>
+
+
+    <section id="brief">
+        <!-- h1 is used for incresing height of font -->
+        <!-- br to go to next line -->
+        <!-- classes and id are used to apply css on each application -->
+        <h1 class="logo"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><img src="nalogo.png"
+                alt=""></h1>
+        <h1 class="h center ">NAKSH AUTOMATION
+        </h1>
+        <P class="center bor">
+            Automation To An Easier Life
+        </P>
+        <div class="login-container ">
+            <!-- creating form for login  -->
+            <!-- when we press submit button it will call method -->
+
+           
+            <form method="POST">
+                <h1 class="loginn center">Login Page</h1>
+                <div class="form-group">
+                    <!-- input type is given as text so we can insert text in it -->
+                    Username:<input type="text" class="form-control" name="uname" id="emailid" placeholder="Username" >
+                    <!-- span is used to show error it will be called using its id -->
+                    <span id="usererror" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <!-- here input type is password -->
+                    password:<input type="password" class="form-control" name="passw" id="passwordid"
+                        placeholder="Password">
+                    <span id="passworderror" class="text-danger"></span>
+
+                </div>
+
+                <div class="fogot-link ">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="remember">
+                        <label for="remember">Remember Password</label>
+                    </div>
+                    <!-- anchor tag is given so that when we click on forget password we can go on some page -->
+                    <div><a href="#">forgot Password?</a></div>
+
+                </div>
+                <!-- submit is used to submit the form it will perform 2 things
+                1.it will call the method and 2 is it will perform action specified -->
+                <input type="submit" class="btn btn-primary">
+
+                
+
+            </form>
+
+        </div>
+
+    </section>
+    <!-- this are for scripts 
+    scripts can be used in header also or at the end of body -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+</body>
+
+</html>
